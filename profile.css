@@ -154,10 +154,11 @@ body {
 .resume-wrapper{
     display: flex;
     justify-content: center;
-    height: 700px;
+    height: fit-content;
+    width: fit-content;
 }
 
 .resume{
-  width: 90%;
+  width: 70%;
   padding-bottom: 30px;
 }
