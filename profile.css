@@ -98,7 +98,7 @@ body {
   width: 100%;
   margin-bottom: 20px;
   color: transparent;
-  font-size: 0px;
+  font-size: 0;
 }
 .portfolio-item-wrapper:hover h3 {
   width: 100%;
@@ -154,11 +154,10 @@ body {
 .resume-wrapper{
     display: flex;
     justify-content: center;
-    height: fit-content;
-    width: fit-content;
+    height: 700px;
 }
 
 .resume{
-  width: 70%;
+  width: 90%;
   padding-bottom: 30px;
 }
