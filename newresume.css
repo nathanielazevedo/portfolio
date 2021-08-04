@@ -1,0 +1,141 @@
+body{
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+img{
+    margin: 0;
+    display: block;
+}
+
+/* Navigation styling */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 3px 0 5px -2px #888;
+}
+
+nav a{
+    padding: 15px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav_head{
+    margin: 20px auto;
+    font-size: 30px;
+    color: teal;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.quote{
+    position: absolute;
+    right: 70px;
+    top: 250px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    font-weight:500;
+    line-height: 50px;
+    
+}
+
+.key_words{
+    background-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+
+.job_title{
+    font-size: 15px;
+    color: black;
+}
+
+.info{
+    padding: 50px;
+}
+
+hr{
+    color: lightgray;
+    width: 9vw;
+}
+
+main{
+    width: 90vw;
+    margin-left: 10vw;
+}
+
+.lastname{
+    color: teal;
+}
+
+.title{
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-left: 70px;
+}
+
+@media only screen and (max-width: 1272px) {
+    nav{
+        display: none;
+    }
+
+    main{
+        margin: 0;
+        width: 100vw;
+        margin-top: 5vh;
+    }
+
+    .quote{
+        display: none;
+    }
+
+    .phone_nav{
+        height: 5vh;
+        width: 100vw;
+        background-color: white;
+        color: teal;
+        position: fixed;
+        box-shadow: 3px 3px 5px -2px #888;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_name{
+        margin: 0 auto;
+    }
+
+    .hamburger{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+
+    nav{
+        height: 95vh;
+        margin-top: 5vh;
+        width: 200px;
+    }
+}

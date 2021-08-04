@@ -1,144 +1,78 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="profile.css" />
-    <title>Projects</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="left-side">
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="index.html">Projects</a>
-          </div>
-          <div class="nav-link-wrapper">
-            <a href="resume.html">Resume</a>
-          </div>
-          <div class="nav-link-wrapper">
-            <a href="about.html">About</a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newresume.css" />
+
+    <title>Nate Azevedo</title>
+</head>
+<body>
+    <div hidden class="phone_nav"><i class="fas fa-bars hamburger"></i><span class="mobile_name">Nate Azevedo</span></div>
+    <nav id="nav">
+        <div href="#top" class="nav_head">Nate <br> Azevedo <br> <span class="job_title">Full Stack Developer</span></div>
+        <hr>
+        <a class="links" href="#summary"><div style="width: 30px; display: inline-block;"><i class="fas fa-user icons"></i></div>About</a>
+        <a class="links" href="#stack"><div style="width: 30px; display: inline-block;"><i class="fas fa-hammer icons"></i></div>Stack</a>
+        <a class="links" href="#projects"><div style="width: 30px; display: inline-block;"><i class="fas fa-code icons"></i></div>Projects</a>
+        <a class="links" href="#experience"><div style="width: 30px; display: inline-block;"><i class="fas fa-angle-double-up icons"></i></div>Experience</a>
+        <a class="links" href="#values"><div style="width: 30px; display: inline-block;"><i class="fas fa-heart icons"></i></div>Values</a>
+        <a class="links" href="#contact"><div style="width: 30px; display: inline-block;"><i class="fas fa-id-card-alt icons"></i></div>Contact</a>
+        <a class="links" href="#contact"><div style="width: 30px; display: inline-block;"><i class="fas fa-id-card-alt icons"></i></div>Resume</a>
+    </nav>
+    <main>
+        <div>
+            <p class="quote">"Extensive <span class="key_words">documentation, testing and communication </span><br> &nbsp; is vital for efficent software development."</p>
+            <img id="top" src="images/head.JPG" width="100%">
         </div>
-
-        <div class="right-side">
-          <div class="brand">
-            <div>Nate Azevedo</div>
-          </div>
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-          <div class="portfolio-item-wrapper">
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/profile_jobly.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>jobly</h3>
-              </div>
-
-              <div class="subtitle">
-                React, Hooks, functional components, Axios (useEffect). PS... I
-                built the backend too.
-              </div>
+        <h4 class="title" id="summary">Summary</h4>
+        <p class="info">Full Stack Software Developer with professional experience managing, designing and developing high quality custom software. Exceptional communicator with a reputation of demonstrating professionalism in team environments. Documentation, testing, and communication are key to efficient software development. I'd love to bring these values to your company.</p>
+        <section>
+            <h4 class="title" id="stack">Stack</h4>
+            <p class="info">HTML CSS JAVASCRIPT</p>
+        </section>
+        <section>
+            <div>
+                <h4 class="title">Work Experience</h4>
+                <div class="info">
+                    <div>
+                        <h5>Systems Analyst / Developer</h5>
+                        <i>Date</i>
+                        <p>Summary</p>
+                    </div>
+                    <div>
+                        <h5></h5>
+                        <i>Date</i>
+                        <p>Summary</p>
+                    </div>
+                    <div>
+                        <h5>Job 3 Title</h5>
+                        <i>Date</i>
+                        <p>Summary</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <a class="portfolio-item-wrapper" href="https://github.com/nathanielazevedo/feelapp.git">
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/portfolio_feel.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>feel</h3>
-              </div>
-
-              <div class="subtitle">
-                <h5>Python, Flask, PostgreSQL, SQLAlchemy, Javascript.</h5>
-              </div>
+        </section>
+        <section>
+            <h4 class="title" id="values">Development Values</h4>
+            <div class="info">
+                <a>Documentation</a> <br>
+                <a>Communication</a>
             </div>
-          </a>
-          <a
-            class="portfolio-item-wrapper"
-            href="https://github.com/nathanielazevedo/memory_game.git"
-          >
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/portfolio_memory_game.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>memory game</h3>
-              </div>
-
-              <div class="subtitle">
-                <h5>Javascript, HTML, CSS. DOM manipulation to the max!</h5>
-              </div>
+        </section>
+        <section>
+            <h4 class="title" id="contact">Contact</h4>
+            <div class="info">
+                <a>LinkedIn</a> <br>
+                <a>nathanielpaulazevedo@gmail.com</a>
             </div>
-          </a>
-          <a
-            class="portfolio-item-wrapper"
-            href="https://github.com/nathanielazevedo/micro_war.git"
-          >
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/portfolio_micro_wars.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>micro wars</h3>
-              </div>
-
-              <div class="subtitle">
-                <h5>
-                  Javascript, HTML, CSS, JQuery. For my Biologist friends.
-                </h5>
-              </div>
-            </div>
-          </a>
-          <a class="portfolio-item-wrapper" href="https://github.com/nathanielazevedo/hack-or-snooze.git">
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/portfolio_hack_or_snooze.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>hack or snooze</h3>
-              </div>
-
-              <div class="subtitle">
-                <h5>OOP, AJAX, Axios, Javascript, HTML, CSS</h5>
-              </div>
-            </div>
-          </a>
-          <a class="portfolio-item-wrapper" href="https://github.com/nathanielazevedo/todo_list.git">
-            <div
-              class="portfolio-img-background"
-              style="background-image: url(images/portfolio_todo_list.png)"
-            ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <h3>todo list</h3>
-              </div>
-
-              <div class="subtitle">
-                <h5>Javascript, CSS, HTML. Focus on usage of local storage.</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <script src="profile.js"></script>
-  </body>
+        </seciton>
+    </main> 
+    <script src="newresume.js"></script>
+</body>
 </html>
