@@ -9,13 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="newresume.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>Nate Azevedo</title>
 </head>
 <body>
     <div hidden class="phone_nav"><i class="fas fa-bars hamburger"></i><span class="mobile_name">Nate Azevedo</span></div>
     <nav id="nav">
-        <div href="#top" class="nav_head">Nate <br> Azevedo <br> <span class="job_title">Full Stack Developer</span></div>
+        <div href="#top" class="nav_head">Nate <br> Azevedo <br> <span class="job_title_main">Full Stack Developer</span></div>
         <hr>
         <a class="links" href="#summary"><div style="width: 30px; display: inline-block;"><i class="fas fa-user icons"></i></div>About</a>
         <a class="links" href="#stack"><div style="width: 30px; display: inline-block;"><i class="fas fa-hammer icons"></i></div>Stack</a>
@@ -30,43 +31,108 @@
             <p class="quote">"Extensive <span class="key_words">documentation, testing and communication </span><br> &nbsp; is vital for efficent software development."</p>
             <img id="top" src="images/head.JPG" width="100%">
         </div>
-        <h4 class="title" id="summary">Summary</h4>
+        <h4 class="title" id="summary">SUMMARY</h4>
         <p class="info">Full Stack Software Developer with professional experience managing, designing and developing high quality custom software. Exceptional communicator with a reputation of demonstrating professionalism in team environments. Documentation, testing, and communication are key to efficient software development. I'd love to bring these values to your company.</p>
         <section>
-            <h4 class="title" id="stack">Stack</h4>
-            <p class="info">HTML CSS JAVASCRIPT</p>
+            <h4 class="title" id="stack">STACK</h4>
+            <div class="stack_images">
+                <img class="stack_image" src="/images/vim.svg">
+                <img class="stack_image" src="/images/codeigniter.svg">
+                <img class="stack_image" src="/images/css-3.svg">
+                <img class="stack_image" src="/images/flask.svg">
+                <img class="stack_image" src="/images/javascript.svg">
+                <img class="stack_image" src="/images/jquery.svg">
+                <img class="stack_image" src="/images/python.svg">
+                <img class="stack_image" src="/images/php.svg">
+                <img class="stack_image" src="/images/redux.svg">
+                <img class="stack_image" src="/images/react.svg">
+            </div>
         </section>
         <section>
             <div>
-                <h4 class="title">Work Experience</h4>
-                <div class="info">
-                    <div>
-                        <h5>Systems Analyst / Developer</h5>
-                        <i>Date</i>
-                        <p>Summary</p>
+                <h4 class="title">EXPERIENCE</h4>
+                <div class="info jobs">
+                    <div class="job">
+                        <div class="job_box">
+                            <img class="exp_image" src="/images/spark.jpeg"> 
+                            <div class="job_title">
+                                <h5>SPARK Business Works</h5>   
+                                <h5>Systems Analyst / Developer</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="job_summary">
+                            <li>Responsible for the management, development and deployment of code. </li>
+                            <li>Daily work includes performing code reviews, QA testing, resolving merge requests, managing AWS EC2/RDS instances, writing code. </li>
+                            <li>Maintain over 5 code bases and drive dev teams towards building the next feature.</li>
+                            <li>Thorough documentation and testing.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h5></h5>
-                        <i>Date</i>
-                        <p>Summary</p>
+                    <div class="job">
+                        <div class="job_box">
+                            <img class="exp_image" src="/images/hospital.png" style="border: 1px solid rgb(32, 32, 68)"> 
+                            <div class="job_title">
+                                <h5>St. Luke's Hospital</h5>   
+                                <h5>Sterile Processing Technician</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="job_summary">
+                            <li>Responsible for the management, development and deployment of code. </li>
+                            <li>Daily work includes performing code reviews, QA testing, resolving merge requests, managing AWS EC2/RDS instances, writing code. </li>
+                            <li>Maintain over 5 code bases and drive dev teams towards building the next feature.</li>
+                            <li>Thorough documentation and testing.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h5>Job 3 Title</h5>
-                        <i>Date</i>
-                        <p>Summary</p>
+                    <div class="job">
+                        <div class="job_box">
+                            <img class="exp_image" src="/images/boise.png"> 
+                            <div class="job_title">
+                                <h5>Boise State University</h5>   
+                                <h5>Biological Research Technician</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="job_summary">
+                            <li>Responsible for the management, development and deployment of code. </li>
+                            <li>Daily work includes performing code reviews, QA testing, resolving merge requests, managing AWS EC2/RDS instances, writing code. </li>
+                            <li>Maintain over 5 code bases and drive dev teams towards building the next feature.</li>
+                            <li>Thorough documentation and testing.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h4 class="title" id="values">Development Values</h4>
+            <div>
+                <h4 class="title">PROJECTS</h4>
+                <div class="info projects">
+                    <div class="card" style="width: 600px;">
+                        <img class="card-img-top" width="fit-content" src="/images/feel.png">
+                        <div class="card-body">
+                            <h5 class="card-title">FEEL</h5>
+                            <p class="card-text">Built with Python, Flask, Jinja, PostgreSQL, SQLAlchemy, Javascript. This app consumes the SpoonacularAPI for food searching. After my girlfriend had her stomach removed due to cancer, I built this for her to track which foods cause her negative side effects. It allows users suffering from many different illness to discover what foods people like them can tolerate and which foods they cannot. Enjoy!</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 600px;">
+                        <img class="card-img-top" src="/images/paf.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Program A Friend</h5>
+                            <p class="card-text">Node, React, Express. I built this from the front to the back. Lots of testing!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4 class="title" id="values">VALUES</h4>
             <div class="info">
                 <a>Documentation</a> <br>
                 <a>Communication</a>
             </div>
         </section>
         <section>
-            <h4 class="title" id="contact">Contact</h4>
+            <h4 class="title" id="contact">CONTACT</h4>
             <div class="info">
                 <a>LinkedIn</a> <br>
                 <a>nathanielpaulazevedo@gmail.com</a>
@@ -74,5 +140,6 @@
         </seciton>
     </main> 
     <script src="newresume.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
