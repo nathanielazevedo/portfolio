@@ -17,14 +17,12 @@
     <div hidden class="phone_nav"><i class="fas fa-bars hamburger"></i><span class="mobile_name">Nate Azevedo</span></div>
     <nav id="nav">
         <div href="#top" class="nav_head">Nate <br> Azevedo <br> <span class="job_title_main">Full Stack Developer</span></div>
-        <hr>
-        <a class="links" href="#summary"><div style="width: 30px; display: inline-block;"><i class="fas fa-user icons"></i></div>About</a>
-        <a class="links" href="#stack"><div style="width: 30px; display: inline-block;"><i class="fas fa-hammer icons"></i></div>Stack</a>
-        <a class="links" href="#projects"><div style="width: 30px; display: inline-block;"><i class="fas fa-code icons"></i></div>Projects</a>
-        <a class="links" href="#experience"><div style="width: 30px; display: inline-block;"><i class="fas fa-angle-double-up icons"></i></div>Experience</a>
-        <a class="links" href="#values"><div style="width: 30px; display: inline-block;"><i class="fas fa-heart icons"></i></div>Values</a>
-        <a class="links" href="#contact"><div style="width: 30px; display: inline-block;"><i class="fas fa-id-card-alt icons"></i></div>Contact</a>
-        <a class="links" href="#contact"><div style="width: 30px; display: inline-block;"><i class="fas fa-id-card-alt icons"></i></div>Resume</a>
+        <a class="links" href="#summary"><div class="nav_icon"><i class="fas fa-user icons"></i></div>About</a>
+        <a class="links" href="#stack"><div class="nav_icon"><i class="fas fa-hammer icons"></i></div>Stack</a>
+        <a class="links" href="#experience"><div class="nav_icon"><i class="fas fa-angle-double-up icons"></i></div>Experience</a>
+        <a class="links" href="#projects"><div class="nav_icon"><i class="fas fa-code icons"></i></div>Projects</a>
+        <a class="links" href="#contact"><div class="nav_icon"><i class="fas fa-id-card-alt icons"></i></div>Contact</a>
+        <a class="links" href="https://resume.creddle.io/resume/2ywm58om7e3" target="_blank"><div class="nav_icon"><i class="fas fa-id-card-alt icons"></i></div>Resume</a>
     </nav>
     <main>
         <div>
@@ -36,25 +34,25 @@
         <section>
             <h4 class="title" id="stack">STACK</h4>
             <div class="stack_images">
-                <img class="stack_image" src="/portfolio/images/vim.svg">
-                <img class="stack_image" src="/portfolio/images/codeigniter.svg">
-                <img class="stack_image" src="/portfolio/images/css-3.svg">
-                <img class="stack_image" src="/portfolio/images/flask.svg">
-                <img class="stack_image" src="/portfolio/images/javascript.svg">
-                <img class="stack_image" src="/portfolio/images/jquery.svg">
-                <img class="stack_image" src="/portfolio/images/python.svg">
-                <img class="stack_image" src="/portfolio/images/php.svg">
-                <img class="stack_image" src="/portfolio/images/redux.svg">
-                <img class="stack_image" src="/portfolio/images/react.svg">
+                <img class="stack_image" src="/images/vim.svg">
+                <img class="stack_image" src="/images/codeigniter.svg">
+                <img class="stack_image" src="/images/css-3.svg">
+                <img class="stack_image" src="/images/flask.svg">
+                <img class="stack_image" src="/images/javascript.svg">
+                <img class="stack_image" src="/images/jquery.svg">
+                <img class="stack_image" src="/images/python.svg">
+                <img class="stack_image" src="/images/php.svg">
+                <img class="stack_image" src="/images/redux.svg">
+                <img class="stack_image" src="/images/react.svg">
             </div>
         </section>
         <section>
             <div>
-                <h4 class="title">EXPERIENCE</h4>
+                <h4 class="title" id="experience">EXPERIENCE</h4>
                 <div class="info jobs">
                     <div class="job">
                         <div class="job_box">
-                            <img class="exp_image" src="/portfolio/images/spark.jpeg"> 
+                            <img class="exp_image" src="/images/spark.jpeg"> 
                             <div class="job_title">
                                 <h5>SPARK Business Works</h5>   
                                 <h5>Systems Analyst / Developer</h5>
@@ -70,7 +68,7 @@
                     </div>
                     <div class="job">
                         <div class="job_box">
-                            <img class="exp_image" src="/portfolio/images/hospital.png" style="border: 1px solid rgb(32, 32, 68)"> 
+                            <img class="exp_image" src="/images/hospital.png" style="border: 1px solid rgb(32, 32, 68)"> 
                             <div class="job_title">
                                 <h5>St. Luke's Hospital</h5>   
                                 <h5>Sterile Processing Technician</h5>
@@ -86,7 +84,7 @@
                     </div>
                     <div class="job">
                         <div class="job_box">
-                            <img class="exp_image" src="/portfolio/images/boise.png"> 
+                            <img class="exp_image" src="/images/boise.png"> 
                             <div class="job_title">
                                 <h5>Boise State University</h5>   
                                 <h5>Biological Research Technician</h5>
@@ -105,41 +103,36 @@
         </section>
         <section>
             <div>
-                <h4 class="title">PROJECTS</h4>
+                <h4 class="title" id="projects">PROJECTS</h4>
                 <div class="info projects">
-                    <div class="card" style="width: 600px;">
-                        <img class="card-img-top" width="fit-content" src="/portfolio/images/feel.png">
+                    <div class="card project" >
+                        <img class="card-img-top" width="fit-content" src="/images/feel.png">
                         <div class="card-body">
                             <h5 class="card-title">FEEL</h5>
-                            <p class="card-text">Built with Python, Flask, Jinja, PostgreSQL, SQLAlchemy, Javascript. This app consumes the SpoonacularAPI for food searching. After my girlfriend had her stomach removed due to cancer, I built this for her to track which foods cause her negative side effects. It allows users suffering from many different illness to discover what foods people like them can tolerate and which foods they cannot. Enjoy!</p>
+                            <p class="card-text">Built with Python, Flask, Jinja, PostgreSQL, SQLAlchemy, Javascript. This app consumes the SpoonacularAPI for food searching. The web app allows users suffering from many different illness to record and discover what foods people like them can tolerate and which foods they cannot. Enjoy!</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 600px;">
-                        <img class="card-img-top" src="/portfolio/images/paf.png">
+                    <div class="card project">
+                        <img class="card-img-top" src="/images/paf.png">
                         <div class="card-body">
                             <h5 class="card-title">Program A Friend</h5>
-                            <p class="card-text">Node, React, Express. I built this from the front to the back. Lots of testing!</p>
+                            <p class="card-text">Node, React, Redux, Express, PostgreSQL, Heroku. This web app allows you to program a personalized bot to have conversations with. I've used it to practice my Spanish with!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h4 class="title" id="values">VALUES</h4>
-            <div class="info">
-                <a>Documentation</a> <br>
-                <a>Communication</a>
-            </div>
-        </section>
-        <section>
             <h4 class="title" id="contact">CONTACT</h4>
-            <div class="info">
-                <a>LinkedIn</a> <br>
-                <a>nathanielpaulazevedo@gmail.com</a>
+            <div class="info contact">
+                <a href="https://www.linkedin.com/in/nateazevedo/"><img class="contact_image" src="images/linkedin.svg" alt=""></a>
+                <div><img class="contact_image" src="images/gmail.svg" alt=""><a>nathanielpaulazevedo@gmail.com</a></div>
             </div>
         </seciton>
     </main> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="newresume.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </body>
 </html>

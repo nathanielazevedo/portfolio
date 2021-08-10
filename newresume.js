@@ -11,7 +11,7 @@ for(let i = 0; i <= links.length - 1; i++){
     icon.style.color = linkColors[i];
     link.addEventListener('mouseover', function(){
         link.style.borderLeft = `solid 4px ${linkColors[i]}`;
-        link.style.backgroundColor = `lightgray`;
+        link.style.backgroundColor = `rgb(241, 238, 238)`;
     })
     link.addEventListener('mouseout', function(){
         link.style.borderLeft = ``;
@@ -35,3 +35,39 @@ hamburger[0].addEventListener('click', function(){
     }
 
 })
+
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  $("h4").each(function () {
+      var target = $(this).offset().top;
+      var id = $(this).attr("id");
+      var distance = target - scrollTop;
+      let color;
+         
+      if (distance < 10) {
+          console.log(id)
+        switch (id) {
+            case "summary":
+                color = "teal";
+                break;
+            case "stack":
+                color = "#a2d5c6";
+                break;
+            case "experience":
+                color = "#12a4d9";
+                break;
+            case "projects":
+                color = "#5c3c92";
+                break;
+            case "contact":
+                color = "#ffc13b";
+                break;
+        }
+          $(".links").each(function () {
+              $(this).css({ "background-color": "white", "font-weight": "normal", "border-left": ""})
+          })
+          $(`a[href='#${id}']`).css({ "background-color": "rgb(241, 238, 238)", "font-weight": "bold", "border-left": `${color} solid 4px` });
+        
+      }
+  });
+});
