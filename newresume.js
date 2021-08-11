@@ -45,7 +45,6 @@ $(window).scroll(function () {
       let color;
          
       if (distance < 10) {
-          console.log(id)
         switch (id) {
             case "summary":
                 color = "teal";
@@ -71,3 +70,32 @@ $(window).scroll(function () {
       }
   });
 });
+
+
+let stack_images = $('.stack_images');
+let stack = ['codeigniter.svg', 'css-3.svg', 'flask.svg', 'html-5.svg', 'javascript.svg', 'jquery.svg', 'php.svg', 'python.svg', 'react.svg', 'redux.svg', 'vim.svg'];
+let size = 1;
+for (let i = 0; i < stack.length; i++) {
+    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+};
+
+$('.left').on('click', function () {
+    let first = stack[0];
+    stack_images.html('')
+    stack.shift();
+    stack.push(first);
+   for (let i = 0; i < stack.length; i++) {
+    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+}; 
+})
+
+$('.right').on('click', function () {
+    let last = stack[stack.length - 1];
+    stack_images.html('')
+    stack.pop();
+    stack.unshift(last);
+   for (let i = 0; i < stack.length; i++) {
+    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`);
+}; 
+})
+
