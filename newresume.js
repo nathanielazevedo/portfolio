@@ -98,7 +98,7 @@ let stack = [
 ];
 let size = 1;
 for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
+  stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
 }
 
 $(".left").on("click", function () {
@@ -107,7 +107,7 @@ $(".left").on("click", function () {
   stack.shift();
   stack.push(first);
   for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
+    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
   }
 });
 
@@ -118,7 +118,7 @@ $(".right").on("click", function () {
   stack.unshift(last);
   for (let i = 0; i < stack.length; i++) {
     stack_images.prepend(
-      `<img class="stack_image" src="/images/${stack[i]}"></img>`
+      `<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`
     );
   }
 });
@@ -145,7 +145,7 @@ function init() {
   let mixer
   loader.load(
     // resource URL
-    "/images/nate.gltf",
+    "/portfolio/images/nate.gltf",
     // called when the resource is loaded
     function (gltf) {
       mixer = new THREE.AnimationMixer(gltf.scene);
@@ -200,7 +200,7 @@ function init2() {
   let spark;
   loader.load(
     // resource URL
-    "/images/spark.gltf",
+    "/portfolio/images/spark.gltf",
     // called when the resource is loaded
     function (gltf) {
     //   mixer = new THREE.AnimationMixer(gltf.scene);
@@ -255,7 +255,7 @@ function init3() {
   let spark;
   loader.load(
     // resource URL
-    "/images/boise.gltf",
+    "/portfolio/images/boise.gltf",
     // called when the resource is loaded
     function (gltf) {
     //   mixer = new THREE.AnimationMixer(gltf.scene);
@@ -311,7 +311,7 @@ function init4() {
   let spark;
   loader.load(
     // resource URL
-    "/images/hospital.gltf",
+    "/portfolio/images/hospital.gltf",
     // called when the resource is loaded
     function (gltf) {
     //   mixer = new THREE.AnimationMixer(gltf.scene);
