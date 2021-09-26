@@ -64,12 +64,13 @@ img{
     filter: brightness(70%);
 }
 
+
 /* Main quote styling */
 
 .quote{
     position: absolute;
     right: 5vw;
-    top: 20vh;
+    top: 15vh;
     color: white;
     font-size: 2vw;
     font-weight:500;
@@ -77,6 +78,9 @@ img{
     z-index: 100;
 }
 
+.main{
+    width: 85vw;
+}
 /* Navigation styling */
 
 nav{
