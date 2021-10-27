@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Nate Azevedo Portfolio">
-    <meta property="og:image" content="https://nathanielazevedo.github.io/portfolio/images/cover.png">
+    <meta property="og:image" content="https://nathanielazevedo.github.io/images/cover.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="newresume.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/favicon.ico" />
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
     <title>Nate Azevedo</title>
 </head>
 <body>
-    <div class="phone_nav"><i class="fas fa-bars hamburger"></i><span class="mobile_name">Nate Azevedo</span></div>
+    <div class="mobile-top-navbar"><i class="fas fa-bars hamburger"></i><span class="mobile-nav-my-name">Nate Azevedo</span></div>
     <nav id="nav">
         <div href="#top" class="nav_head">Nate <br> Azevedo <br> <span class="job_title_main">Full Stack Developer</span></div>
         <a class="links" href="#summary"><div class="nav_icon"><i class="fas fa-user icons"></i></div>About</a>
@@ -25,16 +24,17 @@
         <a class="links" href="#experience"><div class="nav_icon"><i class="fas fa-angle-double-up icons"></i></div>Experience</a>
         <a class="links" href="#projects"><div class="nav_icon"><i class="fas fa-code icons"></i></div>Projects</a>
         <a class="links" href="#contact"><div class="nav_icon"><i class="fas fa-id-card-alt icons"></i></div>Contact</a>
-        <a class="links" href="https://resume.creddle.io/resume/2ywm58om7e3" target="_blank"><div class="nav_icon"><i class="fas fa-id-card-alt icons"></i></div>Resume</a>
+        <a class="links" href="https://resume.creddle.io/resume/2ywm58om7e3" target="_blank">
+            <div class="nav_icon"><i class="fas fa-id-card-alt icons"></i></div>Resume</a>
     </nav>
     <main class="main">
-
-        <div style="background-color: black;">
-            <p class="quote">"Extensive <span class="key_words">documentation, testing and communication </span><br> &nbsp; is vital for efficent software development."</p>
-            <div id="top"></div>
-        </div>
-        <h4 class="title" id="summary">SUMMARY</h4>
-        <p class="info">Full Stack Software Developer with professional experience managing, designing and developing high quality custom software. Exceptional communicator with a reputation of demonstrating professionalism in team environments. Documentation, testing, and communication are key to efficient software development. I'd love to bring these values to your company.</p>
+        <section class="head">
+          <div id="top"></div>
+        </section>
+        <section>
+            <h4 class="title" id="summary">SUMMARY</h4>
+            <p class="info">Full Stack Software Developer with professional experience managing, designing and developing high quality custom software. Exceptional communicator with a reputation of demonstrating professionalism in team environments. Documentation, testing, and communication are key to efficient software development. I'd love to bring these values to your company.</p>
+        </section>
         <section>
             <h4 class="title" id="stack">STACK</h4>
             <div class="stack_spot">
@@ -47,14 +47,12 @@
             </div>
         </section>
         <section>
-            <div>
                 <h4 class="title" id="experience">EXPERIENCE</h4>
                 <div class="info jobs">
                     <div class="job">
                         <div class="job_box">
-                            <!-- <img class="exp_image" src="/images/spark.jpeg">  -->
-                            <div class="exp_image" id='spark'></div>
-                            <div class="job_title" style="margin-left: 75px;">
+                            <img class="exp_image" src="/images/spark.jpeg"> 
+                            <div class="job_title">
                                 <h5>SPARK Business Works</h5>   
                                 <h5>Systems Analyst / Developer</h5>
                             </div>
@@ -71,8 +69,7 @@
                     </div>
                     <div class="job">
                         <div class="job_box">
-                            <!-- <img class="exp_image" src="/images/hospital.png" style="border: 1px solid rgb(32, 32, 68)">  -->
-                            <div id="hospital" ></div>
+                            <img class="exp_image" src="/images/hospital.png" > 
                             <div class="job_title">
                                 <h5>St. Luke's Hospital</h5>   
                                 <h5>Sterile Processing Technician</h5>
@@ -88,9 +85,8 @@
                     </div>
                     <div class="job">
                         <div class="job_box">
-                            <!-- <img class="exp_image" src="/images/boise.png">  -->
-                            <div class="exp_image" id='boise'></div>
-                            <div class="job_title" style="margin-left: 75px;">
+                            <img class="exp_image" src="/images/boise.png"> 
+                            <div class="job_title">
                                 <h5>Boise State University</h5>   
                                 <h5>Biological Research Technician</h5>
                             </div>
@@ -104,7 +100,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
         </section>
         <section>
             <div>
@@ -130,8 +125,8 @@
         <section>
             <h4 class="title" id="contact">CONTACT</h4>
             <div class="info contact">
-                <a href="https://www.linkedin.com/in/nateazevedo/"><img class="contact_image" src="/portfolio/images/linkedin.svg" alt=""></a>
-                <div><img class="contact_image" src="/portfolio/images/gmail.svg" alt=""><a>nathanielpaulazevedo@gmail.com</a></div>
+                <a href="https://www.linkedin.com/in/nateazevedo/"><img class="contact_image" src="/images/linkedin.svg" alt=""></a>
+                <div><img class="contact_image" src="/images/gmail.svg" alt=""><a>nathanielpaulazevedo@gmail.com</a></div>
             </div>
         </seciton>
     </main>   

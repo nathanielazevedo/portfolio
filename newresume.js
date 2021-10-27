@@ -1,4 +1,3 @@
-/** @format */
 
 let links = document.getElementsByClassName("links");
 let icons = document.getElementsByClassName("icons");
@@ -26,7 +25,7 @@ for (let i = 0; i <= links.length - 1; i++) {
   });
 }
 
-let hamburger = document.getElementsByClassName("hamburger");
+const hamburger = document.getElementsByClassName("hamburger");
 let mobilenav = false;
 hamburger[0].addEventListener("click", function () {
   let nav = document.getElementById("nav");
@@ -98,7 +97,7 @@ let stack = [
 ];
 let size = 1;
 for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+  stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
 }
 
 $(".left").on("click", function () {
@@ -107,7 +106,7 @@ $(".left").on("click", function () {
   stack.shift();
   stack.push(first);
   for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+    stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
   }
 });
 
@@ -118,11 +117,12 @@ $(".right").on("click", function () {
   stack.unshift(last);
   for (let i = 0; i < stack.length; i++) {
     stack_images.prepend(
-      `<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`
+      `<img class="stack_image" src="/images/${stack[i]}"></img>`
     );
   }
 });
 
+//3D rendering
 function init() {
   let contact = document.getElementById("top");
   const scene = new THREE.Scene();
@@ -145,13 +145,12 @@ function init() {
   let mixer
   loader.load(
     // resource URL
-    "/portfolio/images/nate.gltf",
+    "/images/nate.gltf",
     // called when the resource is loaded
     function (gltf) {
       mixer = new THREE.AnimationMixer(gltf.scene);
       var action = mixer.clipAction(gltf.animations[0]);
       action.play();
-      console.log(gltf);
       scene.add(gltf.scene);
     }
   );
@@ -162,7 +161,6 @@ function init() {
   light.position.set(0, 0, 3);
   scene.add(light);
 
-  console.log(scene);
   function animate() {
     requestAnimationFrame(animate);
     var delta = clock.getDelta();
@@ -175,169 +173,167 @@ function init() {
 
 init()
 
+// //3D rendering of tokens
+// function init2() {
+//   let contact = document.getElementById("spark");
+//   const scene = new THREE.Scene();
+// //   scene.background = new THREE.Color( 0xff0000 );
+//   const camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
+//   camera.position.z = 1.7;
+//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+// //   renderer.setClearColor( 0xffffff, 0 );
+//   renderer.setSize(150, 75);
+//   contact.appendChild(renderer.domElement);
 
-function init2() {
-  let contact = document.getElementById("spark");
-  const scene = new THREE.Scene();
-//   scene.background = new THREE.Color( 0xff0000 );
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.z = 1.7;
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-//   renderer.setClearColor( 0xffffff, 0 );
-  renderer.setSize(150, 75);
-  contact.appendChild(renderer.domElement);
+//   const loader = new THREE.GLTFLoader();
+//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
+//   controls.enableZoom = false;
+//   const clock = new THREE.Clock();
+//   controls.update();
+//   let spark;
+//   loader.load(
+//     // resource URL
+//     "/images/spark.gltf",
+//     // called when the resource is loaded
+//     function (gltf) {
+//     //   mixer = new THREE.AnimationMixer(gltf.scene);
+//     //   var action = mixer.clipAction(gltf.animations[0]);
+//     //   action.play();
+//       console.log(gltf);
+//       spark = gltf.scene
+//       scene.add(gltf.scene);
+//     }
+//   );
+//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
+//   scene.add(alight);
 
-  const loader = new THREE.GLTFLoader();
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableZoom = false;
-  const clock = new THREE.Clock();
-  controls.update();
-  let spark;
-  loader.load(
-    // resource URL
-    "/portfolio/images/spark.gltf",
-    // called when the resource is loaded
-    function (gltf) {
-    //   mixer = new THREE.AnimationMixer(gltf.scene);
-    //   var action = mixer.clipAction(gltf.animations[0]);
-    //   action.play();
-      console.log(gltf);
-      spark = gltf.scene
-      scene.add(gltf.scene);
-    }
-  );
-  const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-  scene.add(alight);
+// //   const light = new THREE.PointLight(0xffffff, 0.2, 100);
+// //   light.position.set(0, 0, 3);
+// //   scene.add(light);
 
-//   const light = new THREE.PointLight(0xffffff, 0.2, 100);
+//   function animate() {
+//     requestAnimationFrame(animate);
+//     // var delta = clock.getDelta();
+//     // if (mixer) mixer.update(delta);
+//     spark ? spark.rotation.y += 0.01 : ''
+//     controls.update();
+//     renderer.render(scene, camera);
+//   }
+//   animate();
+// }
+
+// init2()
+
+// function init3() {
+//   let contact = document.getElementById("boise");
+//   const scene = new THREE.Scene();
+// //   scene.background = new THREE.Color( 0xff0000 );
+//   const camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
+//   camera.position.z = 1.7;
+//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+// //   renderer.setClearColor( 0xffffff, 0 );
+//   renderer.setSize(150, 75);
+//   contact.appendChild(renderer.domElement);
+
+//   const loader = new THREE.GLTFLoader();
+//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
+//   controls.enableZoom = false;
+//   const clock = new THREE.Clock();
+//   controls.update();
+//   let spark;
+//   loader.load(
+//     // resource URL
+//     "/images/boise.gltf",
+//     // called when the resource is loaded
+//     function (gltf) {
+//     //   mixer = new THREE.AnimationMixer(gltf.scene);
+//     //   var action = mixer.clipAction(gltf.animations[0]);
+//     //   action.play();
+//       spark = gltf.scene
+//       scene.add(gltf.scene);
+//     }
+//   );
+//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
+//   scene.add(alight);
+
+//   const light = new THREE.PointLight(0xffffff, 0.3, 100);
 //   light.position.set(0, 0, 3);
 //   scene.add(light);
 
-  function animate() {
-    requestAnimationFrame(animate);
-    // var delta = clock.getDelta();
-    // if (mixer) mixer.update(delta);
-    spark ? spark.rotation.y += 0.01 : ''
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-}
+//   function animate() {
+//     requestAnimationFrame(animate);
+//     // var delta = clock.getDelta();
+//     // if (mixer) mixer.update(delta);
+//     spark ? spark.rotation.y += 0.01 : '';
+//     controls.update();
+//     renderer.render(scene, camera);
+//   }
+//   animate();
+// }
 
-init2()
-
-function init3() {
-  let contact = document.getElementById("boise");
-  const scene = new THREE.Scene();
-//   scene.background = new THREE.Color( 0xff0000 );
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.z = 1.7;
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-//   renderer.setClearColor( 0xffffff, 0 );
-  renderer.setSize(150, 75);
-  contact.appendChild(renderer.domElement);
-
-  const loader = new THREE.GLTFLoader();
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableZoom = false;
-  const clock = new THREE.Clock();
-  controls.update();
-  let spark;
-  loader.load(
-    // resource URL
-    "/portfolio/images/boise.gltf",
-    // called when the resource is loaded
-    function (gltf) {
-    //   mixer = new THREE.AnimationMixer(gltf.scene);
-    //   var action = mixer.clipAction(gltf.animations[0]);
-    //   action.play();
-      console.log(gltf);
-      spark = gltf.scene
-      scene.add(gltf.scene);
-    }
-  );
-  const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-  scene.add(alight);
-
-  const light = new THREE.PointLight(0xffffff, 0.3, 100);
-  light.position.set(0, 0, 3);
-  scene.add(light);
-
-  function animate() {
-    requestAnimationFrame(animate);
-    // var delta = clock.getDelta();
-    // if (mixer) mixer.update(delta);
-    spark ? spark.rotation.y += 0.01 : '';
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-}
-
-init3()
+// init3()
 
 
-function init4() {
-  let contact = document.getElementById("hospital");
-  const scene = new THREE.Scene();
-//   scene.background = new THREE.Color( 0xff0000 );
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.z = 1.7;
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-//   renderer.setClearColor( 0xffffff, 0 );
-  renderer.setSize(150, 75);
-  contact.appendChild(renderer.domElement);
+// function init4() {
+//   let contact = document.getElementById("hospital");
+//   const scene = new THREE.Scene();
+// //   scene.background = new THREE.Color( 0xff0000 );
+//   const camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
+//   camera.position.z = 1.7;
+//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+// //   renderer.setClearColor( 0xffffff, 0 );
+//   renderer.setSize(150, 75);
+//   contact.appendChild(renderer.domElement);
 
-  const loader = new THREE.GLTFLoader();
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableZoom = false;
-  const clock = new THREE.Clock();
-  controls.update();
-  let spark;
-  loader.load(
-    // resource URL
-    "/portfolio/images/hospital.gltf",
-    // called when the resource is loaded
-    function (gltf) {
-    //   mixer = new THREE.AnimationMixer(gltf.scene);
-    //   var action = mixer.clipAction(gltf.animations[0]);
-    //   action.play();
-      console.log(gltf);
-      spark = gltf.scene
-      scene.add(gltf.scene);
-    }
-  );
-  const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-  scene.add(alight);
+//   const loader = new THREE.GLTFLoader();
+//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
+//   controls.enableZoom = false;
+//   const clock = new THREE.Clock();
+//   controls.update();
+//   let spark;
+//   loader.load(
+//     // resource URL
+//     "/images/hospital.gltf",
+//     // called when the resource is loaded
+//     function (gltf) {
+//     //   mixer = new THREE.AnimationMixer(gltf.scene);
+//     //   var action = mixer.clipAction(gltf.animations[0]);
+//     //   action.play();
+//       spark = gltf.scene
+//       scene.add(gltf.scene);
+//     }
+//   );
+//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
+//   scene.add(alight);
 
-  const light = new THREE.PointLight(0xffffff, 0.3, 100);
-  light.position.set(0, 0, 3);
-  scene.add(light);
+//   const light = new THREE.PointLight(0xffffff, 0.3, 100);
+//   light.position.set(0, 0, 3);
+//   scene.add(light);
 
-  function animate() {
-    requestAnimationFrame(animate);
-    // var delta = clock.getDelta();
-    // if (mixer) mixer.update(delta);
-    spark ? spark.rotation.y += 0.01 : '';
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-}
+//   function animate() {
+//     requestAnimationFrame(animate);
+//     // var delta = clock.getDelta();
+//     // if (mixer) mixer.update(delta);
+//     spark ? spark.rotation.y += 0.01 : '';
+//     controls.update();
+//     renderer.render(scene, camera);
+//   }
+//   animate();
+// }
 
-init4()
+// init4()
