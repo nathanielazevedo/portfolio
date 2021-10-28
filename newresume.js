@@ -3,8 +3,31 @@ const links = document.getElementsByClassName("links");
 const icons = document.getElementsByClassName("icons");
 const hamburger = document.getElementsByClassName("hamburger");
 const stack_images = $(".stack_images");
-
+let previousWindowSize;
 let mobilenav = false;
+
+const work1_image = document.getElementById('work1_image');
+const work2_image = document.getElementById('work2_image');
+const work3_image = document.getElementById('work3_image');
+const linkedin = document.getElementById('linkedin');
+const gmail = document.getElementById('gmail');
+let baseURL;
+
+if(window.location.hostname == '127.0.0.1'){
+  work1_image.setAttribute('src', '/images/spark.jpeg');
+  work2_image.setAttribute('src', '/images/hospital.png');
+  work3_image.setAttribute('src', '/images/boise.png');
+  linkedin.setAttribute('src', '/images/linkedin.svg');
+  gmail.setAttribute('src', '/images/gmail.svg');
+  baseURL = '/images/'
+} else{
+  work1_image.setAttribute('src', 'portfolio/images/spark.jpeg');
+  work2_image.setAttribute('src', 'portfolio/images/hospital.png');
+  work3_image.setAttribute('src', 'portfolio/images/boise.png');
+  linkedin.setAttribute('src', '/portfolio/images/linkedin.svg');
+  gmail.setAttribute('src', '/portfolio/images/gmail.svg');
+  baseURL = '/portfolio/images/'
+}
 
 let linkColors = [
   "teal",
@@ -57,12 +80,19 @@ hamburger[0].addEventListener("click", function () {
   }
 });
 
+//show nav bar if full screen
 function checkWidth(){
   if(window.innerWidth >= 1000){
     nav.style.display = "flex";
     nav.style.backgroundColor = "white";
     mobilenav = true;
   }
+  if(window.innerWidth < 1000 && previousWindowSize >= 1000){
+    nav.style.display = "none";
+    nav.style.backgroundColor = "transparent";
+    mobilenav = false;
+  }
+  previousWindowSize = window.innerWidth;
 }
 
 
@@ -114,7 +144,7 @@ $(window).scroll(function () {
 //for initial stack layout
 
 for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+  stack_images.prepend(`<img class="stack_image" src="${baseURL}${stack[i]}">`);
 }
 
 //for sliding stack left
@@ -125,7 +155,7 @@ $(".left").on("click", function () {
   stack.shift();
   stack.push(first);
   for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+    stack_images.prepend(`<img class="stack_image" src="${baseURL}${stack[i]}">`);
   }
 });
 
@@ -138,7 +168,7 @@ $(".right").on("click", function () {
   stack.unshift(last);
   for (let i = 0; i < stack.length; i++) {
     stack_images.prepend(
-      `<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`
+      `<img class="stack_image" src="${baseURL}${stack[i]}"></img>`
     );
   }
 });
@@ -168,7 +198,7 @@ function init() {
   let mixer
   loader.load(
     // resource URL
-    "/portfolio/images/nate.gltf",
+    `${baseURL}nate.gltf`,
     // called when the resource is loaded
     function (gltf) {
       mixer = new THREE.AnimationMixer(gltf.scene);
