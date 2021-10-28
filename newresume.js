@@ -21,9 +21,9 @@ if(window.location.hostname == '127.0.0.1'){
   gmail.setAttribute('src', '/images/gmail.svg');
   baseURL = '/images/'
 } else{
-  work1_image.setAttribute('src', 'portfolio/images/spark.jpeg');
-  work2_image.setAttribute('src', 'portfolio/images/hospital.png');
-  work3_image.setAttribute('src', 'portfolio/images/boise.png');
+  work1_image.setAttribute('src', '/portfolio/images/spark.jpeg');
+  work2_image.setAttribute('src', '/portfolio/images/hospital.png');
+  work3_image.setAttribute('src', '/portfolio/images/boise.png');
   linkedin.setAttribute('src', '/portfolio/images/linkedin.svg');
   gmail.setAttribute('src', '/portfolio/images/gmail.svg');
   baseURL = '/portfolio/images/'
