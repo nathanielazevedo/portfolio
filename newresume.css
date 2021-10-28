@@ -237,8 +237,20 @@ img {
 
 .contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   min-height: 100vh;
+}
+
+.contact > * {
+  width: 300px;
+  padding: 30px;
+  border: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0px 20px;
 }
 
 .contact_image {
@@ -340,6 +352,12 @@ img {
   .contact > * {
     width: 300px;
     padding: 30px;
+    border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
   }
   .stack_image {
     width: 75px;

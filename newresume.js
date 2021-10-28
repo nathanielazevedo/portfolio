@@ -1,6 +1,10 @@
 
-let links = document.getElementsByClassName("links");
-let icons = document.getElementsByClassName("icons");
+const links = document.getElementsByClassName("links");
+const icons = document.getElementsByClassName("icons");
+const hamburger = document.getElementsByClassName("hamburger");
+const stack_images = $(".stack_images");
+
+let mobilenav = false;
 
 let linkColors = [
   "teal",
@@ -11,6 +15,20 @@ let linkColors = [
   "#ffc13b",
 ];
 
+let stack = [
+  "codeigniter.svg",
+  "css-3.svg",
+  "flask.svg",
+  "html-5.svg",
+  "javascript.svg",
+  "jquery.svg",
+  "python.svg",
+  "react.svg",
+  "redux.svg",
+  "vim.svg",
+];
+
+//changes nav bar highlight color
 for (let i = 0; i <= links.length - 1; i++) {
   let link = links[i];
   let icon = icons[i];
@@ -25,8 +43,7 @@ for (let i = 0; i <= links.length - 1; i++) {
   });
 }
 
-const hamburger = document.getElementsByClassName("hamburger");
-let mobilenav = false;
+//open and close nav on small screen
 hamburger[0].addEventListener("click", function () {
   let nav = document.getElementById("nav");
   if (!mobilenav) {
@@ -40,6 +57,18 @@ hamburger[0].addEventListener("click", function () {
   }
 });
 
+function checkWidth(){
+  if(window.innerWidth >= 1000){
+    nav.style.display = "flex";
+    nav.style.backgroundColor = "white";
+    mobilenav = true;
+  }
+}
+
+
+window.onresize = checkWidth;
+
+//handles scrolling to match nav highlights
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
   $("h4").each(function () {
@@ -82,23 +111,13 @@ $(window).scroll(function () {
   });
 });
 
-let stack_images = $(".stack_images");
-let stack = [
-  "codeigniter.svg",
-  "css-3.svg",
-  "flask.svg",
-  "html-5.svg",
-  "javascript.svg",
-  "jquery.svg",
-  "python.svg",
-  "react.svg",
-  "redux.svg",
-  "vim.svg",
-];
-let size = 1;
+//for initial stack layout
+
 for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+  stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
 }
+
+//for sliding stack left
 
 $(".left").on("click", function () {
   let first = stack[0];
@@ -106,9 +125,11 @@ $(".left").on("click", function () {
   stack.shift();
   stack.push(first);
   for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
+    stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
   }
 });
+
+//for sliding stack right
 
 $(".right").on("click", function () {
   let last = stack[stack.length - 1];
@@ -117,12 +138,14 @@ $(".right").on("click", function () {
   stack.unshift(last);
   for (let i = 0; i < stack.length; i++) {
     stack_images.prepend(
-      `<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`
+      `<img class="stack_image" src="/images/${stack[i]}"></img>`
     );
   }
 });
 
+
 //3D rendering
+
 function init() {
   let contact = document.getElementById("top");
   const scene = new THREE.Scene();
@@ -145,7 +168,7 @@ function init() {
   let mixer
   loader.load(
     // resource URL
-    "/portfolio/images/nate.gltf",
+    "/images/nate.gltf",
     // called when the resource is loaded
     function (gltf) {
       mixer = new THREE.AnimationMixer(gltf.scene);
@@ -172,168 +195,3 @@ function init() {
 }
 
 init()
-
-// //3D rendering of tokens
-// function init2() {
-//   let contact = document.getElementById("spark");
-//   const scene = new THREE.Scene();
-// //   scene.background = new THREE.Color( 0xff0000 );
-//   const camera = new THREE.PerspectiveCamera(
-//     75,
-//     window.innerWidth / window.innerHeight,
-//     0.1,
-//     1000
-//   );
-//   camera.position.z = 1.7;
-//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-// //   renderer.setClearColor( 0xffffff, 0 );
-//   renderer.setSize(150, 75);
-//   contact.appendChild(renderer.domElement);
-
-//   const loader = new THREE.GLTFLoader();
-//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
-//   controls.enableZoom = false;
-//   const clock = new THREE.Clock();
-//   controls.update();
-//   let spark;
-//   loader.load(
-//     // resource URL
-//     "/portfolio/images/spark.gltf",
-//     // called when the resource is loaded
-//     function (gltf) {
-//     //   mixer = new THREE.AnimationMixer(gltf.scene);
-//     //   var action = mixer.clipAction(gltf.animations[0]);
-//     //   action.play();
-//       console.log(gltf);
-//       spark = gltf.scene
-//       scene.add(gltf.scene);
-//     }
-//   );
-//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-//   scene.add(alight);
-
-// //   const light = new THREE.PointLight(0xffffff, 0.2, 100);
-// //   light.position.set(0, 0, 3);
-// //   scene.add(light);
-
-//   function animate() {
-//     requestAnimationFrame(animate);
-//     // var delta = clock.getDelta();
-//     // if (mixer) mixer.update(delta);
-//     spark ? spark.rotation.y += 0.01 : ''
-//     controls.update();
-//     renderer.render(scene, camera);
-//   }
-//   animate();
-// }
-
-// init2()
-
-// function init3() {
-//   let contact = document.getElementById("boise");
-//   const scene = new THREE.Scene();
-// //   scene.background = new THREE.Color( 0xff0000 );
-//   const camera = new THREE.PerspectiveCamera(
-//     75,
-//     window.innerWidth / window.innerHeight,
-//     0.1,
-//     1000
-//   );
-//   camera.position.z = 1.7;
-//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-// //   renderer.setClearColor( 0xffffff, 0 );
-//   renderer.setSize(150, 75);
-//   contact.appendChild(renderer.domElement);
-
-//   const loader = new THREE.GLTFLoader();
-//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
-//   controls.enableZoom = false;
-//   const clock = new THREE.Clock();
-//   controls.update();
-//   let spark;
-//   loader.load(
-//     // resource URL
-//     "/portfolio/images/boise.gltf",
-//     // called when the resource is loaded
-//     function (gltf) {
-//     //   mixer = new THREE.AnimationMixer(gltf.scene);
-//     //   var action = mixer.clipAction(gltf.animations[0]);
-//     //   action.play();
-//       spark = gltf.scene
-//       scene.add(gltf.scene);
-//     }
-//   );
-//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-//   scene.add(alight);
-
-//   const light = new THREE.PointLight(0xffffff, 0.3, 100);
-//   light.position.set(0, 0, 3);
-//   scene.add(light);
-
-//   function animate() {
-//     requestAnimationFrame(animate);
-//     // var delta = clock.getDelta();
-//     // if (mixer) mixer.update(delta);
-//     spark ? spark.rotation.y += 0.01 : '';
-//     controls.update();
-//     renderer.render(scene, camera);
-//   }
-//   animate();
-// }
-
-// init3()
-
-
-// function init4() {
-//   let contact = document.getElementById("hospital");
-//   const scene = new THREE.Scene();
-// //   scene.background = new THREE.Color( 0xff0000 );
-//   const camera = new THREE.PerspectiveCamera(
-//     75,
-//     window.innerWidth / window.innerHeight,
-//     0.1,
-//     1000
-//   );
-//   camera.position.z = 1.7;
-//   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-// //   renderer.setClearColor( 0xffffff, 0 );
-//   renderer.setSize(150, 75);
-//   contact.appendChild(renderer.domElement);
-
-//   const loader = new THREE.GLTFLoader();
-//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
-//   controls.enableZoom = false;
-//   const clock = new THREE.Clock();
-//   controls.update();
-//   let spark;
-//   loader.load(
-//     // resource URL
-//     "/portfolio/images/hospital.gltf",
-//     // called when the resource is loaded
-//     function (gltf) {
-//     //   mixer = new THREE.AnimationMixer(gltf.scene);
-//     //   var action = mixer.clipAction(gltf.animations[0]);
-//     //   action.play();
-//       spark = gltf.scene
-//       scene.add(gltf.scene);
-//     }
-//   );
-//   const alight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-//   scene.add(alight);
-
-//   const light = new THREE.PointLight(0xffffff, 0.3, 100);
-//   light.position.set(0, 0, 3);
-//   scene.add(light);
-
-//   function animate() {
-//     requestAnimationFrame(animate);
-//     // var delta = clock.getDelta();
-//     // if (mixer) mixer.update(delta);
-//     spark ? spark.rotation.y += 0.01 : '';
-//     controls.update();
-//     renderer.render(scene, camera);
-//   }
-//   animate();
-// }
-
-// init4()
