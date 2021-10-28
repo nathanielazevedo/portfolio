@@ -114,7 +114,7 @@ $(window).scroll(function () {
 //for initial stack layout
 
 for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
+  stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
 }
 
 //for sliding stack left
@@ -125,7 +125,7 @@ $(".left").on("click", function () {
   stack.shift();
   stack.push(first);
   for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="/images/${stack[i]}">`);
+    stack_images.prepend(`<img class="stack_image" src="/portfolio/images/${stack[i]}">`);
   }
 });
 
@@ -138,7 +138,7 @@ $(".right").on("click", function () {
   stack.unshift(last);
   for (let i = 0; i < stack.length; i++) {
     stack_images.prepend(
-      `<img class="stack_image" src="/images/${stack[i]}"></img>`
+      `<img class="stack_image" src="/portfolio/images/${stack[i]}"></img>`
     );
   }
 });
@@ -168,7 +168,7 @@ function init() {
   let mixer
   loader.load(
     // resource URL
-    "/images/nate.gltf",
+    "/portfolio/images/nate.gltf",
     // called when the resource is loaded
     function (gltf) {
       mixer = new THREE.AnimationMixer(gltf.scene);
