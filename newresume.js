@@ -12,6 +12,7 @@ const work3_image = document.getElementById('work3_image');
 const linkedin = document.getElementById('linkedin');
 const gmail = document.getElementById('gmail');
 let baseURL;
+const navIcon = document.getElementById('nav-icon');
 
 if(window.location.hostname == '127.0.0.1'){
   work1_image.setAttribute('src', '/images/spark.jpeg');
@@ -66,14 +67,19 @@ for (let i = 0; i <= links.length - 1; i++) {
   });
 }
 
-//open and close nav on small screen
+//open and close nav on mobile
 hamburger[0].addEventListener("click", function () {
   let nav = document.getElementById("nav");
   if (!mobilenav) {
+    navIcon.classList.remove('fa-bars');
+    navIcon.classList.add('fa-times');
     nav.style.display = "flex";
     nav.style.backgroundColor = "white";
     mobilenav = true;
+
   } else {
+    navIcon.classList.remove('fa-times');
+    navIcon.classList.add('fa-bars');
     nav.style.display = "none";
     nav.style.backgroundColor = "transparent";
     mobilenav = false;
@@ -188,7 +194,9 @@ function init() {
   camera.position.z = 3;
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth / 2.5, window.innerHeight / 2.5);
-  contact.appendChild(renderer.domElement);
+  let spinner = document.createElement('div');
+  spinner.setAttribute('class', 'loader');
+  contact.append(spinner);
 
   const loader = new THREE.GLTFLoader();
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -205,6 +213,8 @@ function init() {
       var action = mixer.clipAction(gltf.animations[0]);
       action.play();
       scene.add(gltf.scene);
+      contact.innerHTML = '';
+      contact.appendChild(renderer.domElement);
     }
   );
   const alight = new THREE.AmbientLight(0xffffff, 0.3); // soft white light

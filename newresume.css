@@ -261,10 +261,33 @@ img {
   display: none;
 }
 
+.loader {
+  border: 8px solid white; /* Light grey */
+  border-top: 8px solid teal; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media only screen and (max-width: 1000px) {
   body {
     display: flex;
     flex-direction: column;
+  }
+
+  nav {
+    display: none;
+    z-index: 999;
+    height: 95vh;
+    margin-top: 7vh;
+    width: 200px;
+    position: fixed;
   }
 
   .mobile-top-navbar {
@@ -273,20 +296,12 @@ img {
     box-shadow: 3px 3px 5px -2px #888;
     display: flex;
     align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     right: 0;
-    height: 5vh;
+    height: 7vh;
     background-color: white;
-  }
-
-  nav {
-    display: none;
-    z-index: 999;
-    height: 95vh;
-    margin-top: 5vh;
-    width: 200px;
-    position: fixed;
   }
 
   .nav_head {
@@ -297,14 +312,16 @@ img {
     margin-right: 20px;
   }
 
-  .mobile-nav-my-name {
-    margin: 0 auto;
+ .mobile-nav-my-name {
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .hamburger {
-    margin-left: 25px;
     font-size: 20px;
-  }
+    position: absolute;
+    left: 20px;
+  } 
 
   .job_title {
     font-size: 10px;
@@ -318,7 +335,7 @@ img {
     max-width: 100vw;
     width: 100vw;
     margin-left: 0;
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
 
   .jobs {
