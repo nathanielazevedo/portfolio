@@ -321,6 +321,7 @@ img {
     font-size: 20px;
     position: absolute;
     left: 20px;
+    cursor: pointer;
   } 
 
   .job_title {
