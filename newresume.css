@@ -179,6 +179,52 @@ img {
 
 /* Stack Styles */
 
+.stack-spot{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.stack-container{
+  margin-top: 15px;
+  width: 80%;
+  background-color: rgb(202, 201, 201);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.stack-name{
+  background-color: teal;
+  color: white;
+  padding: 2px 5px;
+  min-width: 100px;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-percent{
+  background-color: rgb(12, 167, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 1.1s 0.2s width ease-in-out;
+}
+
+.stack-percent-number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 0px 4px;
+}
+
+/* 
 .stack_images {
   display: flex;
   padding: 50px;
@@ -210,7 +256,7 @@ img {
 .right {
   font-size: 4vw;
   cursor: pointer;
-}
+} */
 
 /* Projects Styling */
 

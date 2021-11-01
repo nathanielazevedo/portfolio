@@ -147,39 +147,6 @@ $(window).scroll(function () {
   });
 });
 
-//for initial stack layout
-
-for (let i = 0; i < stack.length; i++) {
-  stack_images.prepend(`<img class="stack_image" src="${baseURL}${stack[i]}">`);
-}
-
-//for sliding stack left
-
-$(".left").on("click", function () {
-  let first = stack[0];
-  stack_images.html("");
-  stack.shift();
-  stack.push(first);
-  for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(`<img class="stack_image" src="${baseURL}${stack[i]}">`);
-  }
-});
-
-//for sliding stack right
-
-$(".right").on("click", function () {
-  let last = stack[stack.length - 1];
-  stack_images.html("");
-  stack.pop();
-  stack.unshift(last);
-  for (let i = 0; i < stack.length; i++) {
-    stack_images.prepend(
-      `<img class="stack_image" src="${baseURL}${stack[i]}"></img>`
-    );
-  }
-});
-
-
 //3D rendering
 
 function init() {
