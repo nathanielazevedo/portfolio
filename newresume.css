@@ -109,7 +109,7 @@ main {
   padding: 50px;
 }
 
-#project_link {
+.project_link {
   text-decoration: none;
   color: inherit;
 }
@@ -288,7 +288,7 @@ img {
   width: 90%;
 }
 
-#project_image {
+.project_image {
   width: 100%;
   height: 500px;
 }
