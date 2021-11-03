@@ -68,7 +68,7 @@ main {
   flex-direction: column;
   background-color: rgba(223, 221, 221, 0.404);
   margin-left: 175px;
-  background: url(./images/bg.png);
+  background: url(./portfolio/images/bg.png);
 }
 
 /* First Section in main */
