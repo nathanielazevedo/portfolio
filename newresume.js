@@ -149,56 +149,56 @@ $(window).scroll(function () {
 
 //3D rendering
 
-function init() {
-  let contact = document.getElementById("top");
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.z = 3;
-  const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth / 2.5, window.innerHeight / 2.5);
-  let spinner = document.createElement('div');
-  spinner.setAttribute('class', 'loader');
-  contact.append(spinner);
+// function init() {
+//   let contact = document.getElementById("top");
+//   const scene = new THREE.Scene();
+//   const camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
+//   camera.position.z = 3;
+//   const renderer = new THREE.WebGLRenderer();
+//   renderer.setSize(window.innerWidth / 2.5, window.innerHeight / 2.5);
+//   let spinner = document.createElement('div');
+//   spinner.setAttribute('class', 'loader');
+//   contact.append(spinner);
 
-  const loader = new THREE.GLTFLoader();
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableZoom = false;
-  const clock = new THREE.Clock();
-  controls.update();
-  let mixer
-  loader.load(
-    // resource URL
-    `${baseURL}nate.gltf`,
-    // called when the resource is loaded
-    function (gltf) {
-      mixer = new THREE.AnimationMixer(gltf.scene);
-      var action = mixer.clipAction(gltf.animations[0]);
-      action.play();
-      scene.add(gltf.scene);
-      contact.innerHTML = '';
-      contact.appendChild(renderer.domElement);
-    }
-  );
-  const alight = new THREE.AmbientLight(0xffffff, 0.3); // soft white light
-  scene.add(alight);
+//   const loader = new THREE.GLTFLoader();
+//   const controls = new THREE.OrbitControls(camera, renderer.domElement);
+//   controls.enableZoom = false;
+//   const clock = new THREE.Clock();
+//   controls.update();
+//   let mixer
+//   loader.load(
+//     // resource URL
+//     `${baseURL}nate.gltf`,
+//     // called when the resource is loaded
+//     function (gltf) {
+//       mixer = new THREE.AnimationMixer(gltf.scene);
+//       var action = mixer.clipAction(gltf.animations[0]);
+//       action.play();
+//       scene.add(gltf.scene);
+//       contact.innerHTML = '';
+//       contact.appendChild(renderer.domElement);
+//     }
+//   );
+//   const alight = new THREE.AmbientLight(0xffffff, 0.3); // soft white light
+//   scene.add(alight);
 
-  const light = new THREE.PointLight(0xffffff, 0.7, 100);
-  light.position.set(0, 0, 3);
-  scene.add(light);
+//   const light = new THREE.PointLight(0xffffff, 0.7, 100);
+//   light.position.set(0, 0, 3);
+//   scene.add(light);
 
-  function animate() {
-    requestAnimationFrame(animate);
-    var delta = clock.getDelta();
-    if (mixer) mixer.update(delta);
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-}
+//   function animate() {
+//     requestAnimationFrame(animate);
+//     var delta = clock.getDelta();
+//     if (mixer) mixer.update(delta);
+//     controls.update();
+//     renderer.render(scene, camera);
+//   }
+//   animate();
+// }
 
-init()
+// init()
