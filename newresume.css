@@ -23,7 +23,7 @@ html {
 hr {
   display: block;
   width: 96%;
-  height: 1px;
+  height: .1px;
 }
 
 .info {
@@ -146,21 +146,27 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 20px;
 }
 
 .exp_image {
   border-radius: 50%;
   width: 75px;
+  margin-left: 10px;
 }
 
 .job_title {
-  font-size: 15px;
+  font-size: 25px;
   color: black;
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-left: 15px;
   align-items: center;
+}
+
+.job_title :nth-child(2){
+  margin-right: 15px;
 }
 
 /* Stack Styles */
@@ -175,7 +181,7 @@ main {
 
 .stack-container{
   margin-top: 15px;
-  width: 80%;
+  width: 90%;
   background-color: rgb(202, 201, 201);
   display: flex;
   justify-content: flex-start;
@@ -247,20 +253,25 @@ main {
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
+  flex-direction: column;
 }
 
-.contact > * {
-  width: 300px;
-  padding: 30px;
-  border: solid white 1px;
+/* .contact > * {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  margin: 0px 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+} */
+
+.contact-info{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.contact-info a{
+  display: inline;
 }
 
 .contact_image {
@@ -341,6 +352,10 @@ main {
     margin-top: 7vh;
   }
 
+  .stack-container{
+    width: 99%;
+  }
+
   .jobs {
     margin: 0;
     padding: 25px;
@@ -355,6 +370,10 @@ main {
   .projects {
     padding: 0;
     margin: 0;
+  }
+
+  .job_title{
+    font-size: 17px;
   }
 
   .project {

@@ -9,8 +9,7 @@ let mobilenav = false;
 const work1_image = document.getElementById('work1_image');
 const work2_image = document.getElementById('work2_image');
 const work3_image = document.getElementById('work3_image');
-const linkedin = document.getElementById('linkedin');
-const gmail = document.getElementById('gmail');
+const headshot = document.getElementById('headshot');
 let baseURL;
 const navIcon = document.getElementById('nav-icon');
 
@@ -18,15 +17,13 @@ if(window.location.hostname == '127.0.0.1'){
   work1_image.setAttribute('src', '/images/spark.jpeg');
   work2_image.setAttribute('src', '/images/hospital.png');
   work3_image.setAttribute('src', '/images/boise.png');
-  linkedin.setAttribute('src', '/images/linkedin.svg');
-  gmail.setAttribute('src', '/images/gmail.svg');
+  headshot.setAttribute('src', '/images/head.webp');
   baseURL = '/images/'
 } else{
   work1_image.setAttribute('src', '/portfolio/images/spark.jpeg');
   work2_image.setAttribute('src', '/portfolio/images/hospital.png');
   work3_image.setAttribute('src', '/portfolio/images/boise.png');
-  linkedin.setAttribute('src', '/portfolio/images/linkedin.svg');
-  gmail.setAttribute('src', '/portfolio/images/gmail.svg');
+  headshot.setAttribute('src', '/portfolio/images/head.webp');
   baseURL = '/portfolio/images/'
 }
 
