@@ -30,15 +30,6 @@ hr {
   padding: 50px;
 }
 
-section{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Image Styling */
-
 img {
   margin: 0;
   display: block;
@@ -89,21 +80,13 @@ nav a {
 /* main section */
 
 main {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(223, 221, 221, 0.404);
   margin-left: 175px;
-  background: url(./images/bg.png);
+  background: url(./images/bg.png) repeat;
 }
 
 /* First Section in main */
 
 .head {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   position: relative;
 }
 
@@ -124,11 +107,9 @@ main {
   color: white;
   padding: 20px;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 40px;
   font-weight: lighter;
   padding-left: 70px;
-  width: 100%;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
@@ -138,18 +119,6 @@ main {
   font-size: 20px;
 }
 
-/* Main quote styling */
-
-.quote {
-  position: absolute;
-  right: 5vw;
-  top: 15vh;
-  color: white;
-  font-size: 2vw;
-  font-weight: 500;
-  line-height: 50px;
-  z-index: 100;
-}
 
 /* Jobs Styling */
 
@@ -197,7 +166,6 @@ main {
 /* Stack Styles */
 
 .stack-spot{
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

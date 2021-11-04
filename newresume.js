@@ -51,6 +51,7 @@ let stack = [
   "redux.svg",
   "vim.svg",
 ];
+let preHoverElement;
 
 //changes nav bar highlight color
 for (let i = 0; i <= links.length - 1; i++) {
@@ -61,7 +62,8 @@ for (let i = 0; i <= links.length - 1; i++) {
     link.style.borderLeft = `solid 4px ${linkColors[i]}`;
     link.style.backgroundColor = `rgb(241, 238, 238)`;
   });
-  link.addEventListener("mouseout", function () {
+  link.addEventListener("mouseout", function (evt) {
+    if(evt.target.getAttribute('href') == preHoverElement) return;
     link.style.borderLeft = ``;
     link.style.backgroundColor = ``;
   });
@@ -106,6 +108,7 @@ window.onresize = checkWidth;
 
 //handles scrolling to match nav highlights
 $(window).scroll(function () {
+  
   var scrollTop = $(window).scrollTop();
   $("h4").each(function () {
     var target = $(this).offset().top;
@@ -138,6 +141,7 @@ $(window).scroll(function () {
           "border-left": "",
         });
       });
+      preHoverElement = `#${id}`
       $(`a[href='#${id}']`).css({
         "background-color": "rgb(241, 238, 238)",
         "font-weight": "bold",
