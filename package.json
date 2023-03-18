@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/3Dportfolio/",
+  "homepage": "https://shubhamjha25github.io/3Dportfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
