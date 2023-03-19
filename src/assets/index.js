@@ -24,7 +24,7 @@ import threejs from "./tech/threejs.svg";
 import creative_mines from "./company/creative_mines.png";
 import spark from "./company/spark.svg";
 
-import ibanban from "./ibanban.png";
+import ibanban from "./Ibanban.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
