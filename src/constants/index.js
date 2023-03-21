@@ -135,10 +135,14 @@ const experiences = [
     iconBg: "black",
     date: "April 2021 - October 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+
+      "Led and directed 4 software teams to successfully deliver projects on time and within budget, utilizing Agile methodologies to promote collaboration and effective communication.",
+
+      "Wrote high-quality, scalable, and efficient code in PHP, leveraging frameworks such as Laravel and CodeIgniter to build robust web applications and APIs.",
+      
+      "Mentored and coached team members on best practices in software development, including code reviews, testing, and deployment strategies, to ensure code quality and maintainability.",
+      
+      "Collaborated with cross-functional teams including product managers, designers, and stakeholders to understand project requirements and ensure the development of solutions that met business needs.",
     ],
   },
 ];
@@ -154,11 +158,11 @@ const testimonials = [
   },
   {
     testimonial:
-      "Nate taught me to program in the Python language. I can analyze my own data because of him!",
-    name: "Liyuan Sun",
-    designation: "PostDoc",
-    company: "Yale",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
+      "Nate is an incredible teammate and will add hard work, technical ability and skills to any team he joins.",
+    name: "Jake Northey",
+    designation: "CEO",
+    company: "Creative Mines",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
@@ -192,27 +196,31 @@ const projects = [
     image: ibanban,
     source_code_link: "https://github.com/",
   },
-  // {
-  //   name: "Job IT",
-  //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Sociopedia",
+    description:
+      "Full-Stack Facebook mock website. Includes authentication and authorization. Image uploading and redux perist with JWT's. Make and account and post!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+  },
   // {
   //   name: "Trip Guide",
   //   description:
