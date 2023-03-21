@@ -1,13 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import me from "../assets/me.png"
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} max-w-7x1 mx-auto flex items-start gap-5 pt-32`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -23,22 +22,17 @@ const Hero = () => {
             and attractive web applications.
           </p>
         </div>
+        <img src={me} height="200px" width="200px" className="ml-auto lg:mr-40 rounded-full"/>
       </div>
-      <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 ">
-            <motion.div
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-              animate={{ y: [0, 24, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-            />
-          </div>
-        </a>
+      <div className=" w-full flex justify-center items-center xs:max-sm:pt-20">
+        <ul className={`flex flex-col justify-center items-start [&>li]:mt-3 ${styles.paddingX} ${styles.heroSubText}`}>
+            <li>&#8226; I'm looking for positions as a Front-End / Full-Stack developer.</li>
+            <li>&#8226; I like React, Express and anything Python.</li>
+            <li>&#8226; I have experience with both SQL and NoSQL databases.</li>
+            <li>&#8226; I'm familiar with devops like AWS and Docker but I need to study more.</li>
+            <li>&#8226; I want to work for a product based company.</li>
+            <li>&#8226; I've programmed in both very large and very small groups.</li>
+        </ul>
       </div>
     </section>
   );
