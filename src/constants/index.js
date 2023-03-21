@@ -19,7 +19,6 @@ import {
   spark,
   ibanban,
   jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -194,7 +193,8 @@ const projects = [
       },
     ],
     image: ibanban,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nathanielazevedo/ibanban",
+    live_link:"https://nathanielazevedo.github.io/ibanban/"
   },
   {
     name: "Sociopedia",
@@ -219,7 +219,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nathanielazevedo/social-client",
+    live_link:"https://nathanielazevedo.github.io/social-client/"
   },
   // {
   //   name: "Trip Guide",
