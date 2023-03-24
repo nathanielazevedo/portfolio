@@ -22,7 +22,7 @@ import {
   threejs,
 } from "../assets";
 
-const test = "test"
+const test = "test";
 
 export const navLinks = [
   {
@@ -121,10 +121,10 @@ const experiences = [
     iconBg: "black",
     date: "November 2021 - March 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developed and maintained scalable, high-performance web applications using React and TypeScript, resulting in a type-safe codebase.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created reusable UI components and integrated them with backend APIs, resulting in streamlined development processes and reduced time to market for new products.",
+      "Conducted code reviews and provided feedback to other developers, helping to maintain code quality and adhere to best practices for React and TypeScript development.",
     ],
   },
   {
@@ -134,13 +134,12 @@ const experiences = [
     iconBg: "black",
     date: "April 2021 - October 2021",
     points: [
-
       "Led and directed 4 software teams to successfully deliver projects on time and within budget, utilizing Agile methodologies to promote collaboration and effective communication.",
 
       "Wrote high-quality, scalable, and efficient code in PHP, leveraging frameworks such as Laravel and CodeIgniter to build robust web applications and APIs.",
-      
+
       "Mentored and coached team members on best practices in software development, including code reviews, testing, and deployment strategies, to ensure code quality and maintainability.",
-      
+
       "Collaborated with cross-functional teams including product managers, designers, and stakeholders to understand project requirements and ensure the development of solutions that met business needs.",
     ],
   },
@@ -184,17 +183,25 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "canvas",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "react-spring",
+        name: "Express",
         color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
       },
     ],
     image: ibanban,
     source_code_link: "https://github.com/nathanielazevedo/ibanban",
-    live_link:"https://nathanielazevedo.github.io/ibanban/"
+    live_link: "https://nathanielazevedo.github.io/ibanban/",
   },
   {
     name: "Sociopedia",
@@ -220,7 +227,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/nathanielazevedo/social-client",
-    live_link:"https://nathanielazevedo.github.io/social-client/"
+    live_link: "https://nathanielazevedo.github.io/social-client/",
   },
   // {
   //   name: "Trip Guide",
