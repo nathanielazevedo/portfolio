@@ -19,6 +19,7 @@ import {
   spark,
   ibanban,
   jobit,
+  earth,
   threejs,
 } from "../assets";
 
@@ -228,6 +229,32 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/nathanielazevedo/social-client",
     live_link: "https://nathanielazevedo.github.io/social-client/",
+  },
+  {
+    name: "Geo",
+    description:
+      "Full-Stack Location tracking website. Click the button and watch your location light up on the Earth.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgesql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: earth,
+    source_code_link: "https://github.com/nathanielazevedo/geo_front",
+    live_link: "https://nathanielazevedo.github.io/geo_front/",
   },
   // {
   //   name: "Trip Guide",
