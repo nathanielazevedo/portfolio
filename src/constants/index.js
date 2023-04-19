@@ -21,6 +21,7 @@ import {
   jobit,
   earth,
   threejs,
+  gpt,
 } from "../assets";
 
 const test = "test";
@@ -255,6 +256,28 @@ const projects = [
     image: earth,
     source_code_link: "https://github.com/nathanielazevedo/geo_front",
     live_link: "https://nathanielazevedo.github.io/geo_front/",
+  },
+  {
+    name: "GPT-Helper",
+    description:
+      "This is a simple web app that uses the GPT-4 API to generate text. It is a simple way to get started with the GPT-4 API.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GPT-API",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gpt,
+    source_code_link: "https://github.com/nathanielazevedo/gpt_front",
+    live_link: "https://nathanielazevedo.github.io/gpt_front/",
   },
   // {
   //   name: "Trip Guide",

@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import gpt from "./gpt.png";
 import creative_mines from "./company/creative_mines.png";
 import spark from "./company/spark.svg";
 
@@ -42,6 +42,7 @@ export {
   figma,
   git,
   html,
+  gpt,
   javascript,
   mongodb,
   nodejs,
