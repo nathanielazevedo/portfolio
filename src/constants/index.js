@@ -21,263 +21,295 @@ import {
   jobit,
   earth,
   threejs,
+  chicken,
   gpt,
-} from "../assets";
+} from '../assets'
 
-const test = "test";
+const test = 'test'
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: 'contact',
+    title: 'Contact',
   },
-];
+]
 
 const services = [
   {
-    title: "Web Developer",
+    title: 'Full-Stack Developer',
     icon: web,
   },
   {
-    title: "React Developer",
+    title: 'JavaScript',
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: 'Python',
     icon: backend,
   },
   {
-    title: "Open Source Contributor",
+    title: 'React',
     icon: creator,
   },
-];
+]
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: 'HTML 5',
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: 'CSS 3',
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: 'Three JS',
     icon: threejs,
   },
   {
-    name: "git",
+    name: 'git',
     icon: git,
   },
   {
-    name: "figma",
+    name: 'figma',
     icon: figma,
   },
   {
-    name: "docker",
+    name: 'docker',
     icon: docker,
   },
-];
+]
 
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "Creative Mines",
+    title: 'Full Stack Developer',
+    company_name: 'Creative Mines',
     icon: creative_mines,
-    iconBg: "black",
-    date: "November 2021 - March 2023",
+    iconBg: 'black',
+    date: 'November 2021 - March 2023',
     points: [
-      "Developed and maintained scalable, high-performance web applications using React and TypeScript, resulting in a type-safe codebase.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Created reusable UI components and integrated them with backend APIs, resulting in streamlined development processes and reduced time to market for new products.",
-      "Conducted code reviews and provided feedback to other developers, helping to maintain code quality and adhere to best practices for React and TypeScript development.",
+      'Collaborated with over 10 teams to create an cybersecurity application used by companies such as NASA, The US Air Force and thousands of other highly respected businesses worldwide.',
+      'Spearheaded the development of a game-changing feature that optimized product usability and attained a 25%  higher conversion rate in a team of 6 developers.',
+      'Restructured the main grid by breaking down complex code segments and implementing efficient data structures; decreased backend requests and re-rendering by 50%, leading to a streamlined system performance and reduced server load.',
+      'Optimized the performance of the app by implementing redux, functional programming and asynchronous loading techniques; reduced page load times by 60% and raised user experience rating by 35%.',
+      'Tracked and reported software defects using bug-tracking tools and assisted with root cause analysis, resolved 75% of issues discovered.',
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Spark Business Works",
+    title: 'Full Stack Developer',
+    company_name: 'Spark Business Works',
     icon: spark,
-    iconBg: "black",
-    date: "April 2021 - October 2021",
+    iconBg: 'black',
+    date: 'April 2021 - October 2021',
     points: [
-      "Led and directed 4 software teams to successfully deliver projects on time and within budget, utilizing Agile methodologies to promote collaboration and effective communication.",
+      'Promoted within 3 months due to strong performance and organizational impact - ahead of schedule by 12 months.',
 
-      "Wrote high-quality, scalable, and efficient code in PHP, leveraging frameworks such as Laravel and CodeIgniter to build robust web applications and APIs.",
+      'Led cross-functional team in the design and development of a new feature that increased user satisfaction by 50%; improved client throughput by over 40%.',
 
-      "Mentored and coached team members on best practices in software development, including code reviews, testing, and deployment strategies, to ensure code quality and maintainability.",
+      'Minimized sprint time from 4 weeks to 2 weeks and eliminated bottlenecks by streamlining the development process from user stories through code check-in.',
 
-      "Collaborated with cross-functional teams including product managers, designers, and stakeholders to understand project requirements and ensure the development of solutions that met business needs.",
+      'Automated manual testing using Python and Selenium to reduce the time taken for regression testing by 50%.',
     ],
   },
-];
+]
 
 const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Nate does.",
-    name: "Asif Lundstrom",
-    designation: "Attorney",
-    company: "Foundry Law",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: 'Asif Lundstrom',
+    designation: 'Attorney',
+    company: 'Foundry Law',
+    image: 'https://randomuser.me/api/portraits/men/4.jpg',
   },
   {
     testimonial:
-      "Nate is an incredible teammate and will add hard work, technical ability and skills to any team he joins.",
-    name: "Jake Northey",
-    designation: "CEO",
-    company: "Creative Mines",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      'Nate is an incredible teammate and will add hard work, technical ability and skills to any team he joins.',
+    name: 'Jake Northey',
+    designation: 'CEO',
+    company: 'Creative Mines',
+    image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
     testimonial:
-      "Nate is a skilled software engineer and a great mentor. It was an honor to work with him.",
-    name: "Lohane Diogo",
-    designation: "Web Developer",
-    company: "Youx Group",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      'Nate is a skilled software engineer and a great mentor. It was an honor to work with him.',
+    name: 'Lohane Diogo',
+    designation: 'Web Developer',
+    company: 'Youx Group',
+    image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
-];
+]
 
 const projects = [
   {
-    name: "Ibanban",
+    name: 'Chicken Tinder',
     description:
-      "Web-based platform that teaches Mandarin with mini games. Over 300 mandarin words and 4 pure HTML, CSS, JS mini games. Learn Mandarin, play games.",
+      'Organize a group dinner without the hassle. Chicken Tinder helps your party decide where to eat and when.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "TypeScript",
-        color: "green-text-gradient",
+        name: 'TypeScript',
+        color: 'green-text-gradient',
       },
       {
-        name: "Express",
-        color: "pink-text-gradient",
+        name: 'Express',
+        color: 'pink-text-gradient',
       },
       {
-        name: "MongoDB",
-        color: "blue-text-gradient",
+        name: 'MongoDB',
+        color: 'blue-text-gradient',
       },
       {
-        name: "Tailwind",
-        color: "green-text-gradient",
+        name: 'AWS',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: chicken,
+    source_code_link: 'https://github.com/nathanielazevedo/chickentinder',
+    live_link: 'https://www.thechickentinder.com/',
+  },
+  {
+    name: 'Ibanban',
+    description:
+      'Web-based platform that teaches Mandarin with mini games. Over 300 mandarin words and 4 pure HTML, CSS, JS mini games. Learn Mandarin, play games.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'TypeScript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Express',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tailwind',
+        color: 'green-text-gradient',
       },
     ],
     image: ibanban,
-    source_code_link: "https://github.com/nathanielazevedo/ibanban",
-    live_link: "https://nathanielazevedo.github.io/ibanban/",
+    source_code_link: 'https://github.com/nathanielazevedo/ibanban',
+    live_link: 'https://nathanielazevedo.github.io/ibanban/',
   },
   {
-    name: "Sociopedia",
+    name: 'Sociopedia',
     description:
       "Full-Stack Facebook mock website. Includes authentication and authorization. Image uploading and redux perist with JWT's. Make and account and post!",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "express",
-        color: "green-text-gradient",
+        name: 'express',
+        color: 'green-text-gradient',
       },
       {
-        name: "mongodb",
-        color: "pink-text-gradient",
+        name: 'mongodb',
+        color: 'pink-text-gradient',
       },
       {
-        name: "redux",
-        color: "blue-text-gradient",
+        name: 'redux',
+        color: 'blue-text-gradient',
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/nathanielazevedo/social-client",
-    live_link: "https://nathanielazevedo.github.io/social-client/",
+    source_code_link: 'https://github.com/nathanielazevedo/social-client',
+    live_link: 'https://nathanielazevedo.github.io/social-client/',
   },
   {
-    name: "Geo",
+    name: 'Geo',
     description:
-      "Full-Stack Location tracking website. Click the button and watch your location light up on the Earth.",
+      'Full-Stack Location tracking website. Click the button and watch your location light up on the Earth.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "express",
-        color: "green-text-gradient",
+        name: 'express',
+        color: 'green-text-gradient',
       },
       {
-        name: "postgesql",
-        color: "pink-text-gradient",
+        name: 'postgesql',
+        color: 'pink-text-gradient',
       },
       {
-        name: "three.js",
-        color: "blue-text-gradient",
+        name: 'three.js',
+        color: 'blue-text-gradient',
       },
     ],
     image: earth,
-    source_code_link: "https://github.com/nathanielazevedo/geo_front",
-    live_link: "https://nathanielazevedo.github.io/geo_front/",
+    source_code_link: 'https://github.com/nathanielazevedo/geo_front',
+    live_link: 'https://nathanielazevedo.github.io/geo_front/',
   },
   {
-    name: "GPT-Helper",
+    name: 'GPT-Helper',
     description:
-      "This is a simple web app that uses the GPT-4 API to generate text. It is a simple way to get started with the GPT-4 API.",
+      'This is a simple web app that uses the GPT-4 API to generate text. It is a simple way to get started with the GPT-4 API.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "express",
-        color: "green-text-gradient",
+        name: 'express',
+        color: 'green-text-gradient',
       },
       {
-        name: "GPT-API",
-        color: "pink-text-gradient",
+        name: 'GPT-API',
+        color: 'pink-text-gradient',
       },
     ],
     image: gpt,
-    source_code_link: "https://github.com/nathanielazevedo/gpt_front",
-    live_link: "https://nathanielazevedo.github.io/gpt_front/",
+    source_code_link: 'https://github.com/nathanielazevedo/gpt_front',
+    live_link: 'https://nathanielazevedo.github.io/gpt_front/',
   },
   // {
   //   name: "Trip Guide",
@@ -300,6 +332,6 @@ const projects = [
   //   image: tripguide,
   //   source_code_link: "https://github.com/",
   // },
-];
+]
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects }
