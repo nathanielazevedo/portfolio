@@ -23,6 +23,7 @@ import {
   threejs,
   chicken,
   gpt,
+  code,
 } from '../assets'
 
 const test = 'test'
@@ -177,6 +178,36 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'Web Dev Interviews',
+    description:
+      'Online code editor for practicing web development interview questions.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Python',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Postgresql',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'DynamoDb',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'AWS',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: code,
+    source_code_link: 'https://github.com/nathanielazevedo/webdevinterviews',
+    live_link: 'https://www.webdevinterviews.com/',
+  },
   {
     name: 'Chicken Tinder',
     description:
