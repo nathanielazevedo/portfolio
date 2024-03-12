@@ -27,7 +27,7 @@ const Hero = () => {
         <iframe
           width='850'
           height='515'
-          src='https://www.youtube.com/embed/h-sWxQhD-Tg'
+          src='https://www.youtube.com/embed/ee6XWeIJJ9E?si=ddnzOYFC9SqZ-7qm'
           title='YouTube video player'
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
