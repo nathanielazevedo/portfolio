@@ -28,6 +28,7 @@ import ibanban from './Ibanban.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
 import code from './code.png'
+import br from './company/br.png'
 
 export {
   logo,
@@ -60,4 +61,5 @@ export {
   tripguide,
   chicken,
   code,
+  br,
 }
