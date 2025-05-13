@@ -50,11 +50,23 @@ const services = [
     icon: web,
   },
   {
+    title: 'HTML',
+    icon: web,
+  },
+  {
+    title: 'CSS',
+    icon: web,
+  },
+  {
     title: 'JavaScript',
     icon: mobile,
   },
   {
     title: 'Python',
+    icon: backend,
+  },
+  {
+    title: 'Java',
     icon: backend,
   },
   {
@@ -127,9 +139,9 @@ const experiences = [
     date: 'March 2024 - Current',
     points: [
       'Designed and implemented the entire frontend architecture, including user interface components and interactions, resulting in a user-friendly and responsive application that met business requirements.',
-      'Collaborated with cross-functional teams to gather requirements, design solutions, and integrate APIs to streamline data retrieval processes, enhancing data accuracy and reducing processing time by 30%.',
+      'Collaborated with cross-functional teams to gather requirements, design solutions, and integrate APIs to streamline data retrieval processes, enhancing data accuracy and reducing processing time.',
       'Conducted code reviews and implemented best practices to ensure scalable and maintainable codebase, resulting in improved code quality and reduced technical debt.',
-      'Provided technical support and training to end-users on using internal tools effectively, resulting in a 25% increase in user adoption and satisfaction.',
+      'Provided technical support and training to end-users on using internal tools effectively, resulting in an increase in user adoption and satisfaction.',
     ],
   },
   {
