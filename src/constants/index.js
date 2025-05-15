@@ -46,10 +46,6 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Full-Stack Developer',
-    icon: web,
-  },
-  {
     title: 'HTML',
     icon: web,
   },
@@ -66,86 +62,98 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Java',
-    icon: backend,
+    title: 'Vue',
+    icon: creator,
   },
   {
     title: 'React',
     icon: creator,
   },
+  {
+    title: 'Django',
+    icon: creator,
+  },
+  {
+    title: 'Flask',
+    icon: creator,
+  },
+  {
+    title: 'Express',
+    icon: creator,
+  },
 ]
 
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  // {
+  //   name: 'HTML 5',
+  //   icon: html,
+  // },
+  // {
+  //   name: 'CSS 3',
+  //   icon: css,
+  // },
+  // {
+  //   name: 'JavaScript',
+  //   icon: javascript,
+  // },
+  // {
+  //   name: 'TypeScript',
+  //   icon: typescript,
+  // },
+  // {
+  //   name: 'React JS',
+  //   icon: reactjs,
+  // },
+  // {
+  //   name: 'Redux Toolkit',
+  //   icon: redux,
+  // },
+  // {
+  //   name: 'Tailwind CSS',
+  //   icon: tailwind,
+  // },
+  // {
+  //   name: 'Node JS',
+  //   icon: nodejs,
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: 'Three JS',
+  //   icon: threejs,
+  // },
+  // {
+  //   name: 'git',
+  //   icon: git,
+  // },
+  // {
+  //   name: 'figma',
+  //   icon: figma,
+  // },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
 ]
 
 const experiences = [
   {
-    title: 'Full Stack Developer',
-    company_name: 'Boehringer Ingleheim',
+    title: 'Software Engineer',
+    company_name: 'Boehringer Ingleheim (W2 Contract)',
     icon: br,
     iconBg: 'black',
-    date: 'March 2024 - Current',
+    date: 'April 2024 - Current',
     points: [
-      'Designed and implemented the entire frontend architecture, including user interface components and interactions, resulting in a user-friendly and responsive application that met business requirements.',
+      'Designed and implemented frontend architecture, including user interface components and interactions, resulting in a user-friendly and responsive application that met business requirements.',
       'Collaborated with cross-functional teams to gather requirements, design solutions, and integrate APIs to streamline data retrieval processes, enhancing data accuracy and reducing processing time.',
       'Conducted code reviews and implemented best practices to ensure scalable and maintainable codebase, resulting in improved code quality and reduced technical debt.',
       'Provided technical support and training to end-users on using internal tools effectively, resulting in an increase in user adoption and satisfaction.',
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'Software Engineer',
     company_name: 'Creative Mines',
     icon: creative_mines,
     iconBg: 'black',
@@ -159,19 +167,18 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'Systems Analyst',
     company_name: 'Spark Business Works',
     icon: spark,
     iconBg: 'black',
     date: 'April 2021 - October 2021',
     points: [
-      'Promoted within 3 months due to strong performance and organizational impact - ahead of schedule by 12 months.',
 
       'Led cross-functional team in the design and development of a new feature that increased user satisfaction by 50%; improved client throughput by over 40%.',
 
       'Minimized sprint time from 4 weeks to 2 weeks and eliminated bottlenecks by streamlining the development process from user stories through code check-in.',
 
-      'Automated manual testing using Python and Selenium to reduce the time taken for regression testing by 50%.',
+      'Automated manual testing using Python and Selenium to reduce the time taken for regression testing.',
     ],
   },
 ]
@@ -295,30 +302,22 @@ const projects = [
     live_link: 'https://nathanielazevedo.github.io/ibanban/',
   },
   {
-    name: 'Sociopedia',
+    name: 'Pulse',
     description:
-      "Full-Stack Facebook mock website. Includes authentication and authorization. Image uploading and redux perist with JWT's. Make and account and post!",
+      "Make music with a looping drumpad. Includes a sound library and melody library.",
     tags: [
       {
-        name: 'react',
+        name: 'Vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'express',
+        name: 'Tone.js',
         color: 'green-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'redux',
-        color: 'blue-text-gradient',
       },
     ],
     image: jobit,
-    source_code_link: 'https://github.com/nathanielazevedo/social-client',
-    live_link: 'https://nathanielazevedo.github.io/social-client/',
+    source_code_link: 'https://github.com/nathanielazevedo/pulse',
+    live_link: 'https://pulse-ecru-two.vercel.app/',
   },
   {
     name: 'Geo',
