@@ -25,10 +25,9 @@ import creative_mines from './company/creative_mines.png'
 import spark from './company/spark.svg'
 import chicken from './chicken.png'
 import ibanban from './Ibanban.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
-import code from './code.png'
 import br from './company/br.png'
+import pulse from './pulse.png'
+import code from './code.png'
 
 export {
   logo,
@@ -57,9 +56,8 @@ export {
   creative_mines,
   spark,
   ibanban,
-  jobit,
-  tripguide,
   chicken,
-  code,
   br,
+  pulse,
+  code
 }

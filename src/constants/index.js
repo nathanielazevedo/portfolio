@@ -3,31 +3,16 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
   creative_mines,
   spark,
   ibanban,
-  jobit,
   earth,
-  threejs,
   chicken,
   gpt,
-  code,
   br,
+  code,
+  pulse
 } from '../assets'
-
-const test = 'test'
 
 export const navLinks = [
   {
@@ -315,7 +300,7 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: jobit,
+    image: pulse,
     source_code_link: 'https://github.com/nathanielazevedo/pulse',
     live_link: 'https://pulse-ecru-two.vercel.app/',
   },
@@ -367,27 +352,6 @@ const projects = [
     source_code_link: 'https://github.com/nathanielazevedo/gpt_front',
     live_link: 'https://nathanielazevedo.github.io/gpt_front/',
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
 ]
 
 export { services, technologies, experiences, testimonials, projects }
