@@ -9,13 +9,15 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  ThemeToggle,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-primary text-text dark:bg-dark-primary dark:text-dark-white-100">
+        <ThemeToggle />
+        <div>
           <Navbar />
           <Hero />
         </div>

@@ -12,8 +12,11 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: "#1d1836", color: "#fff" }}
-    contentArrowStyle={{ borderRight: "7px solid #232613" }}
+    contentStyle={{
+      background: "var(--tw-bg-opacity, 1) #f1f1f1",
+      color: "var(--tw-text-opacity, 1) #1a1a1a",
+    }}
+    contentArrowStyle={{ borderRight: "7px solid #dcdcdc" }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
@@ -25,11 +28,14 @@ const ExperienceCard = ({ experience }) => (
         />
       </div>
     }
+    className="dark:!bg-dark-primary dark:!text-dark-white-100"
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+      <h3 className="text-text dark:text-dark-white-100 text-[24px] font-bold">
+        {experience.title}
+      </h3>
       <p
-        className="text-secondary text-[16px] font-semibold"
+        className="text-tertiary dark:text-dark-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
       >
         {experience.company_name}
@@ -39,7 +45,7 @@ const ExperienceCard = ({ experience }) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-text dark:text-dark-white-100 text-[14px] pl-1 tracking-wider"
         >
           {point}
         </li>
@@ -52,8 +58,16 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <p className={styles.sectionHeadText}>Work Experience</p>
+        <p
+          className={`${styles.sectionSubText} text-tertiary dark:text-dark-secondary`}
+        >
+          What I have done so far
+        </p>
+        <p
+          className={`${styles.sectionHeadText} text-text dark:text-dark-white-100`}
+        >
+          Work Experience
+        </p>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

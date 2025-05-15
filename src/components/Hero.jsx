@@ -1,32 +1,29 @@
 import React from "react";
 import { styles } from "../styles";
-import me from "../assets/me.png";
 
 const Hero = () => {
-  const text =
-    "Passionate about building web applications using React and Python, with experience developing both front-end and back-end components of web applications. Skilled in designing responsive and user-friendly interfaces using HTML, CSS, and JavaScript, and have experience building scalable APIs using Flask or Django frameworks in Python. Experienced in developing and maintaining databases using SQL, with a strong understanding of database design principles and ability to optimize queries for high performance. Strong problem-solving skills and ability to work collaboratively with cross-functional teams, including product managers, designers, and other developers, to deliver high-quality web applications. Dedicated to continuous learning and keeping up-to-date with the latest web development trends and best practices, with a passion for building efficient and scalable web applications that solve real-world problems.";
-
   return (
-    <section className="w-full py-20 mx-auto">
+    <section className="w-full py-20 mx-auto bg-primary text-text dark:bg-dark-primary dark:text-dark-white-100">
       <div
         className={`${styles.paddingX} max-w-7xl mx-auto flex items-start gap-8 pt-48`}
       >
+        {/* Side bar gradient */}
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-60 h-30 violet-gradient" />
+          <div className="w-1 sm:h-60 h-30 bg-gradient-to-b from-[#915eff] to-transparent" />
         </div>
+
+        {/* Hero text */}
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#995eff]">Nate</span>
+          <h1 className={`${styles.heroHeadText}`}>
+            Hi, I'm{" "}
+            <span className="text-[#995eff] dark:text-purple-700">Nate</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop performant &nbsp;
+          <p className={`${styles.heroSubText} mt-2`}>
+            I develop performant&nbsp;
             <br className="sm:block hidden" />
             and attractive web applications.
           </p>
-          {/* <p className="mt-6 text-white-100 max-w-3xl leading-relaxed text-base sm:text-lg">
-            {text}
-          </p> */}
         </div>
       </div>
     </section>
