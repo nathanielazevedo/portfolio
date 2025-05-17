@@ -273,7 +273,7 @@ const projects = [
     ],
     image: ibanban,
     source_code_link: 'https://github.com/nathanielazevedo/ibanban',
-    live_link: 'https://nathanielazevedo.github.io/ibanban/',
+    live_link: 'https://ibanban.vercel.app/',
   },
   {
     name: 'Pulse',
