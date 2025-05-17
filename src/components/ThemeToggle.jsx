@@ -1,4 +1,3 @@
-// src/components/ThemeToggle.jsx
 import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
@@ -25,12 +24,16 @@ const ThemeToggle = () => {
     setIsDark(!isDark);
   };
 
+  const buttonClass = `fixed top-4 right-4 z-50 px-4 py-2 rounded-lg border text-sm font-medium transition-colors duration-300
+    ${
+      isDark
+        ? "bg-dark-black-200 text-white border-white hover:bg-dark-black-100"
+        : "bg-white text-black border-black hover:bg-secondary"
+    }`;
+
   return (
-    <button
-      onClick={toggleTheme}
-      className="fixed top-4 right-4 z-50 px-3 py-2 bg-secondary text-white dark:bg-light-secondary dark:text-black rounded"
-    >
-      {isDark ? "🌞 Light" : "🌙 Dark"}
+    <button onClick={toggleTheme} className={buttonClass}>
+      {isDark ? "Light Mode" : "Dark Mode"}
     </button>
   );
 };

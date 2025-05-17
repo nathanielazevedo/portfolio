@@ -37,7 +37,7 @@ const ProjectCard = ({
                 e.stopPropagation(); // Prevent parent click (live link)
                 window.open(source_code_link, "_blank");
               }}
-              className="bg-primary dark:bg-dark-black-200 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow"
+              className="bg-dark-black-200 border border-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow"
             >
               <img
                 src={github}
@@ -52,7 +52,7 @@ const ProjectCard = ({
           <h3 className="text-text dark:text-dark-white-100 font-bold text-[24px]">
             {name}
           </h3>
-          <p className="mt-2 text-tertiary dark:text-dark-secondary text-[14px]">
+          <p className="mt-2 text-text dark:text-dark-secondary text-[14px]">
             {description}
           </p>
         </div>

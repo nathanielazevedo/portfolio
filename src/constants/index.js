@@ -214,12 +214,8 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'DynamoDb',
-        color: 'blue-text-gradient',
-      },
-      {
         name: 'AWS',
-        color: 'green-text-gradient',
+        color: 'blue-text-gradient',
       },
     ],
     image: code,
@@ -229,7 +225,7 @@ const projects = [
   {
     name: 'Chicken Tinder',
     description:
-      'Organize a group dinner without the hassle. Chicken Tinder helps your party decide where to eat and when.',
+      'Chicken Tinder helps your party decide where to eat and when.',
     tags: [
       {
         name: 'react',
@@ -246,10 +242,6 @@ const projects = [
       {
         name: 'MongoDB',
         color: 'blue-text-gradient',
-      },
-      {
-        name: 'AWS',
-        color: 'green-text-gradient',
       },
     ],
     image: chicken,
@@ -259,7 +251,7 @@ const projects = [
   {
     name: 'Ibanban',
     description:
-      'Web-based platform that teaches Mandarin with mini games. Over 300 mandarin words and 4 pure HTML, CSS, JS mini games. Learn Mandarin, play games.',
+      'Master Mandarin by playing engaging mini-games that reinforce what you learn.',
     tags: [
       {
         name: 'react',
@@ -276,10 +268,6 @@ const projects = [
       {
         name: 'MongoDB',
         color: 'blue-text-gradient',
-      },
-      {
-        name: 'Tailwind',
-        color: 'green-text-gradient',
       },
     ],
     image: ibanban,
@@ -307,7 +295,7 @@ const projects = [
   {
     name: 'Geo',
     description:
-      'Full-Stack Location tracking website. Click the button and watch your location light up on the Earth.',
+      'Click the button and watch your location light up on Earth.',
     tags: [
       {
         name: 'react',
@@ -331,9 +319,9 @@ const projects = [
     live_link: 'https://nathanielazevedo.github.io/geo_front/',
   },
   {
-    name: 'GPT-Helper',
+    name: 'JS OS',
     description:
-      'This is a simple web app that uses the GPT-4 API to generate text. It is a simple way to get started with the GPT-4 API.',
+      'A Javascript OS.',
     tags: [
       {
         name: 'react',

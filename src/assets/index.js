@@ -28,6 +28,7 @@ import ibanban from './Ibanban.png'
 import br from './company/br.png'
 import pulse from './pulse.png'
 import code from './code.png'
+import headshot from './headshot.jpeg'
 
 export {
   logo,
@@ -59,5 +60,6 @@ export {
   chicken,
   br,
   pulse,
-  code
+  code,
+  headshot
 }
