@@ -29,6 +29,7 @@ import br from './company/br.png'
 import pulse from './pulse.png'
 import code from './code.png'
 import headshot from './headshot.jpeg'
+import os from './os.png'
 
 export {
   logo,
@@ -61,5 +62,6 @@ export {
   br,
   pulse,
   code,
-  headshot
+  headshot,
+  os
 }

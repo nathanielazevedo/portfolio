@@ -11,7 +11,8 @@ import {
   gpt,
   br,
   code,
-  pulse
+  pulse,
+  os
 } from '../assets'
 
 export const navLinks = [
@@ -321,7 +322,7 @@ const projects = [
   {
     name: 'JS OS',
     description:
-      'A Javascript OS.',
+      'A basic mac like operating system implemented in Javascript.',
     tags: [
       {
         name: 'react',
@@ -336,9 +337,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: gpt,
-    source_code_link: 'https://github.com/nathanielazevedo/gpt_front',
-    live_link: 'https://nathanielazevedo.github.io/gpt_front/',
+    image: os,
+    source_code_link: 'https://github.com/nathanielazevedo/os-portfolio',
+    live_link: 'https://os-portfolio-two.vercel.app/',
   },
 ]
 
