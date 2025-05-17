@@ -316,8 +316,8 @@ const projects = [
       },
     ],
     image: earth,
-    source_code_link: 'https://geo-front-hazel.vercel.app/',
-    live_link: 'https://nathanielazevedo.github.io/geo_front/',
+    source_code_link: 'https://github.com/nathanielazevedo/geo_front',
+    live_link: 'https://geo-front-hazel.vercel.app/',
   },
   {
     name: 'JS OS',
