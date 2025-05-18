@@ -12,7 +12,8 @@ import {
   br,
   code,
   pulse,
-  os
+  os,
+  srl
 } from '../assets'
 
 export const navLinks = [
@@ -340,6 +341,28 @@ const projects = [
     image: os,
     source_code_link: 'https://github.com/nathanielazevedo/os-portfolio',
     live_link: 'https://os-portfolio-two.vercel.app/',
+  },
+  {
+    name: 'Scientific Research Labs',
+    description:
+      'An attempt to organize the webspace of scientific research labs.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'express',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'GPT-API',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: srl,
+    source_code_link: 'https://github.com/nathanielazevedo/labs',
+    live_link: 'https://labs-pi-eight.vercel.app/',
   },
 ]
 
