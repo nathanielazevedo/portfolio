@@ -18,12 +18,16 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
+      whileInView="show"
+      initial="hidden"
+      viewport={{ once: true, amount: 0.2 }}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       onClick={() => window.open(live_link, "_blank")}
+      className="w-full sm:w-[360px]"
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary dark:bg-dark-tertiary border border-black dark:border-none p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer shadow-sm dark:shadow-card"
+        className="bg-tertiary dark:bg-dark-tertiary border border-black dark:border-none p-5 rounded-2xl cursor-pointer shadow-sm dark:shadow-card h-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -34,7 +38,7 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={(e) => {
-                e.stopPropagation(); // Prevent parent click (live link)
+                e.stopPropagation();
                 window.open(source_code_link, "_blank");
               }}
               className="bg-dark-black-200 border border-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow"
@@ -75,7 +79,13 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className="text-left"
+      >
         <p
           className={`${styles.sectionSubText} text-tertiary dark:text-dark-secondary`}
         >
@@ -88,20 +98,21 @@ const Works = () => {
         </p>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-text dark:text-dark-white-100 text-[17px] max-w-3xl leading-[30px]"
-        >
-          The following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. They reflect my ability to
-          solve complex problems, work with different technologies, and manage
-          projects effectively.
-        </motion.p>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className="mt-4 text-text dark:text-dark-white-100 text-[17px] max-w-3xl leading-[30px] text-left"
+      >
+        The following projects showcase my skills and experience through
+        real-world examples of my work. Each project is briefly described with
+        links to code repositories and live demos. They reflect my ability to
+        solve complex problems, work with different technologies, and manage
+        projects effectively.
+      </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap justify-center gap-7 w-full">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -110,4 +121,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
