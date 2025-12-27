@@ -25,7 +25,7 @@ const Navbar = () => {
         scrolled ? "bg-primary dark:bg-dark-primary" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto pr-16">
+      <div className="w-full flex items-center max-w-7xl mx-auto pr-16">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -42,16 +42,20 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {/* {navLinks.map((link) => (
+        <ul className="list-none hidden sm:flex flex-row gap-6 ml-10">
+          {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${"text-text dark:text-dark-secondary"} hover:text-text dark:hover:text-dark-white-100 text-[18px] font-medium cursor-pointer`}
+              className={`${
+                active === link.title
+                  ? "text-text dark:text-dark-white-100"
+                  : "text-text dark:text-dark-secondary"
+              } hover:text-text dark:hover:text-dark-white-100 text-[14px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
-          ))} */}
+          ))}
         </ul>
 
         {/* Mobile Nav */}
