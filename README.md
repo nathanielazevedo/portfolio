@@ -13,7 +13,7 @@ Deployment: AWS Elastic Beanstalk, S3, Route 53, CloudFront, Docker
 - Contact: A contact form for visitors to send me a message.
   
 ## How to see it
-1. Go to https://nathanielazevedo.github.io/3Dportfolio/
+1. Go to https://nathanielazevedo.github.io/portfolio/
 
 
 I hope you enjoy exploring my portfolio website and learning more about my skills and experiences as a full stack web developer. If you have any questions or would like to work with me, feel free to send me a message through the contact form.
