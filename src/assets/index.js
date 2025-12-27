@@ -31,6 +31,8 @@ import code from './code.png'
 import headshot from './headshot.jpeg'
 import os from './os.png'
 import srl from './srl.png'
+import just_calories from './just_calories.png'
+import spoken_madarin from './spoken_mandarin.png'
 
 export {
   logo,
@@ -65,5 +67,7 @@ export {
   code,
   headshot,
   os,
-  srl
+  srl,
+  just_calories,
+  spoken_madarin
 }

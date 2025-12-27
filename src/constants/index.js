@@ -13,7 +13,9 @@ import {
   code,
   pulse,
   os,
-  srl
+  srl,
+  just_calories,
+  spoken_madarin,
 } from '../assets'
 
 export const navLinks = [
@@ -207,28 +209,31 @@ const testimonials = [
 ]
 
 const projects = [
-  {
-    name: 'Scientific Research Labs',
+    {
+    name: 'Web Dev Interviews',
     description:
-      'An attempt to organize the webspace of scientific research labs. This is an application to Y Combinator and currently hidden.',
+      'Online code editor for practicing web development interview questions.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'express',
+        name: 'Python',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Postgresql',
         color: 'green-text-gradient',
       },
       {
-        name: 'GPT-API',
-        color: 'pink-text-gradient',
+        name: 'AWS',
+        color: 'blue-text-gradient',
       },
     ],
-    image: srl,
-    source_code_link: 'https://github.com/nathanielazevedo/labs',
-    live_link: 'https://labs-pi-eight.vercel.app/',
-    hidden: true,
+    image: code,
+    source_code_link: 'https://github.com/nathanielazevedo/webdevinterviews',
+    live_link: 'https://www.webdevinterviews.com/',
   },
   {
     name: 'Chicken Tinder',
@@ -257,7 +262,7 @@ const projects = [
     live_link: 'https://www.thechickentinder.com/',
   },
   {
-    name: 'Ibanban',
+    name: 'Spoken Mandarin',
     description:
       'Master Mandarin by playing engaging mini-games that reinforce what you learn.',
     tags: [
@@ -278,9 +283,9 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: ibanban,
-    source_code_link: 'https://github.com/nathanielazevedo/ibanban',
-    live_link: 'https://ibanban.vercel.app/',
+    image: spoken_madarin,
+    source_code_link: 'https://github.com/nathanielazevedo/language',
+    live_link: 'https://language-livid.vercel.app/',
   },
   {
     name: 'Pulse',
@@ -323,27 +328,27 @@ const projects = [
     live_link: 'https://www.npmjs.com/package/react-globe-frequency',
   },
   {
-    name: 'JS OS',
+    name: 'Just Calories',
     description:
-      'A basic mac like operating system implemented in Javascript.',
+      'A simple but effective calorie tracking app to help you reach your fitness goals.',
     tags: [
       {
-        name: 'react',
+        name: 'react-native',
         color: 'blue-text-gradient',
       },
       {
-        name: 'express',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'GPT-API',
-        color: 'pink-text-gradient',
+        name: 'expo',
+        color: 'blue-text-gradient',
       },
     ],
-    image: os,
-    source_code_link: 'https://github.com/nathanielazevedo/os-portfolio',
-    live_link: 'https://os-portfolio-two.vercel.app/',
-  },
+    image: just_calories,
+    source_code_link: 'https://github.com/nathanielazevedo/just_calories',
+    live_link: '',
+  }
 ]
 
 export { services, technologies, experiences, testimonials, projects }
