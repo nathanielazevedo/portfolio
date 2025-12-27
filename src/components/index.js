@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import ThemeToggle from './ThemeToggle';
+import Gallery from './Gallery';
 
 export {
   Hero,
@@ -21,5 +22,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   StarsCanvas,
-  ThemeToggle
+  ThemeToggle,
+  Gallery
 }

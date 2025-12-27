@@ -50,11 +50,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-text dark:text-dark-white-100 text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a software developer with experience using JavaScript, Python, HTML,
-        and CSS. I'm most competent using these frameworks — React, Vue, Django,
-        Flask. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Software engineer and lab automation specialist building full-stack
+        systems, laboratory automation software, and IoT tools. Experienced with
+        React, TypeScript, Python, Django, FastAPI, cloud infrastructure, and
+        integrating laboratory machines like Hamilton, Tecan, and Biomek into
+        modern software systems.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
