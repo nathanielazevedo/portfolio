@@ -128,15 +128,28 @@ const technologies = [
 const experiences = [
   {
     title: 'Software Engineer',
-    company_name: 'Boehringer Ingleheim (W2 Contract)',
+    company_name: 'Boehringer Ingelheim',
     icon: br,
     iconBg: 'black',
-    date: 'April 2024 - Current',
+    date: 'June 2025 - Present',
     points: [
-      'Designed and implemented frontend architecture, including user interface components and interactions, resulting in a user-friendly and responsive application that met business requirements.',
-      'Collaborated with cross-functional teams to gather requirements, design solutions, and integrate APIs to streamline data retrieval processes, enhancing data accuracy and reducing processing time.',
-      'Conducted code reviews and implemented best practices to ensure scalable and maintainable codebase, resulting in improved code quality and reduced technical debt.',
-      'Provided technical support and training to end-users on using internal tools effectively, resulting in an increase in user adoption and satisfaction.',
+      'Built 5+ standalone products end-to-end (frontend, backend, infrastructure) connecting laboratory instruments to a centralized research platform, enabling high-throughput antibody discovery workflows.',
+      'Owned complete technical stack: React frontend, Django REST APIs, PostgreSQL schema design, Redis task queues, Nginx configuration, Docker orchestration, and Linux server administration.',
+      'Developed custom lab workflow management platform (JIRA-like) that orchestrates multi-lab research operations, connecting experimental workflows, task assignments, and cross-team collaboration for antibody research programs.',
+      'Automated end-to-end data pipelines that ingest instrument outputs, validate and transform experimental data, trigger downstream analysis jobs, and deliver real-time visualizations to scientists.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    company_name: 'Precision Global Consulting (Boehringer Ingelheim - W2 Contract)',
+    icon: br,
+    iconBg: 'black',
+    date: 'April 2024 - June 2025',
+    points: [
+      'Built and scaled research platform from 0 to 300+ active scientists across multiple labs, handling 200+ daily workflow executions for high-throughput antibody discovery.',
+      'Architected and implemented distributed task processing system using Redis + Celery to handle computationally intensive jobs, processing hundreds of experimental samples daily without blocking user workflows.',
+      'Designed authentication and authorization system supporting 300+ users across research teams with role-based access control and lab-specific data isolation.',
+      'Built novel bioinformatics sequence analysis tool that compares antibody genetic relatedness, enabling researchers to identify sequence families, track mutations, and make data-driven selection decisions for therapeutic development.',
     ],
   },
   {
@@ -144,12 +157,11 @@ const experiences = [
     company_name: 'Creative Mines',
     icon: creative_mines,
     iconBg: 'black',
-    date: 'November 2021 - March 2023',
+    date: 'November 2021 - April 2023',
     points: [
-      'Collaborated with over 10 teams to create an cybersecurity application used by companies such as NASA, The US Air Force and thousands of other highly respected businesses worldwide.',
-      'Spearheaded the development of a game-changing feature that optimized product usability and attained a 25%  higher conversion rate in a team of 6 developers.',
-      'Restructured the main grid by breaking down complex code segments and implementing efficient data structures; decreased backend requests and re-rendering by 50%, leading to a streamlined system performance and reduced server load.',
-      'Optimized the performance of the app by implementing redux, functional programming and asynchronous loading techniques; reduced page load times by 60% and raised user experience rating by 35%.',
+      'Developed React frontend components for Security Information and Event Management (SIEM) application supporting real-time security event monitoring and automated alerting.',
+      'Optimized core data grid component, reducing re-renders from 15 to 5 per user interaction and significantly improving application responsiveness for large security datasets.',
+      'Collaborated with over 10 teams to create a cybersecurity application used by companies such as NASA, The US Air Force and thousands of other highly respected businesses worldwide.',
       'Tracked and reported software defects using bug-tracking tools and assisted with root cause analysis, resolved 75% of issues discovered.',
     ],
   },
@@ -160,11 +172,8 @@ const experiences = [
     iconBg: 'black',
     date: 'April 2021 - October 2021',
     points: [
-
       'Led cross-functional team in the design and development of a new feature that increased user satisfaction by 50%; improved client throughput by over 40%.',
-
       'Minimized sprint time from 4 weeks to 2 weeks and eliminated bottlenecks by streamlining the development process from user stories through code check-in.',
-
       'Automated manual testing using Python and Selenium to reduce the time taken for regression testing.',
     ],
   },
@@ -199,35 +208,32 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Web Dev Interviews',
+    name: 'Scientific Research Labs',
     description:
-      'Online code editor for practicing web development interview questions.',
+      'An attempt to organize the webspace of scientific research labs. This is an application to Y Combinator and currently hidden.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'Python',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'Postgresql',
+        name: 'express',
         color: 'green-text-gradient',
       },
       {
-        name: 'AWS',
-        color: 'blue-text-gradient',
+        name: 'GPT-API',
+        color: 'pink-text-gradient',
       },
     ],
-    image: code,
-    source_code_link: 'https://github.com/nathanielazevedo/webdevinterviews',
-    live_link: 'https://www.webdevinterviews.com/',
+    image: srl,
+    source_code_link: 'https://github.com/nathanielazevedo/labs',
+    live_link: 'https://labs-pi-eight.vercel.app/',
+    hidden: true,
   },
   {
     name: 'Chicken Tinder',
     description:
-      'Chicken Tinder helps your party decide where to eat and when.',
+      'Chicken Tinder helps your party decide where to eat and when. Used by hundreds of users all over the world.',
     tags: [
       {
         name: 'react',
@@ -295,21 +301,17 @@ const projects = [
     live_link: 'https://pulse-ecru-two.vercel.app/',
   },
   {
-    name: 'Geo',
+    name: 'React Globe Frequency',
     description:
-      'Click the button and watch your location light up on Earth.',
+      'A React component library for displaying user location on an interactive 3D globe. Published on NPM.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'express',
+        name: 'npm-package',
         color: 'green-text-gradient',
-      },
-      {
-        name: 'postgesql',
-        color: 'pink-text-gradient',
       },
       {
         name: 'three.js',
@@ -318,7 +320,7 @@ const projects = [
     ],
     image: earth,
     source_code_link: 'https://github.com/nathanielazevedo/geo_front',
-    live_link: 'https://geo-front-hazel.vercel.app/',
+    live_link: 'https://www.npmjs.com/package/react-globe-frequency',
   },
   {
     name: 'JS OS',
@@ -341,28 +343,6 @@ const projects = [
     image: os,
     source_code_link: 'https://github.com/nathanielazevedo/os-portfolio',
     live_link: 'https://os-portfolio-two.vercel.app/',
-  },
-  {
-    name: 'Scientific Research Labs',
-    description:
-      'An attempt to organize the webspace of scientific research labs.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'express',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'GPT-API',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: srl,
-    source_code_link: 'https://github.com/nathanielazevedo/labs',
-    live_link: 'https://labs-pi-eight.vercel.app/',
   },
 ]
 
