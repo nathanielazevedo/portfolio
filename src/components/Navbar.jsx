@@ -25,7 +25,7 @@ const Navbar = () => {
         scrolled ? "bg-primary dark:bg-dark-primary" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex items-center max-w-7xl mx-auto pr-16">
+      <div className="w-full flex items-center justify-between max-w-7xl mx-auto pr-4">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -42,7 +42,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="list-none hidden sm:flex flex-row gap-6 ml-10">
+        <ul className="list-none hidden lg:flex flex-row gap-6 ml-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -59,17 +59,17 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Nav */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex items-center gap-4">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer invert dark:invert-0"
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-primary dark:bg-dark-primary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-lg`}
+            } p-6 bg-gray-50 dark:bg-dark-primary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-2xl border-2 border-gray-300 dark:border-dark-secondary`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((nav) => (
@@ -77,9 +77,9 @@ const Navbar = () => {
                   key={nav.id}
                   className={`${
                     active === nav.title
-                      ? "text-text dark:text-dark-white-100"
-                      : "text-tertiary dark:text-dark-secondary"
-                  } font-medium cursor-pointer text-[16px]`}
+                      ? "text-black dark:text-dark-white-100 font-bold"
+                      : "text-gray-700 dark:text-dark-secondary"
+                  } font-medium cursor-pointer text-[16px] hover:text-black dark:hover:text-dark-white-100 transition-colors`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);

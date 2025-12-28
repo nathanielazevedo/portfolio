@@ -36,6 +36,10 @@ export const navLinks = [
     title: 'Contact',
   },
   {
+    id: 'videos',
+    title: 'Videos',
+  },
+  {
     id: 'gallery',
     title: 'Gallery',
   },

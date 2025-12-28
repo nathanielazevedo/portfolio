@@ -11,6 +11,7 @@ import {
   StarsCanvas,
   ThemeToggle,
   Gallery,
+  Videos,
 } from "./components";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Videos />
         <Gallery />
       </div>
     </BrowserRouter>

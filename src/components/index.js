@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import ThemeToggle from './ThemeToggle';
 import Gallery from './Gallery';
+import Videos from './Videos';
 
 export {
   Hero,
@@ -23,5 +24,6 @@ export {
   BallCanvas, 
   StarsCanvas,
   ThemeToggle,
-  Gallery
+  Gallery,
+  Videos
 }
