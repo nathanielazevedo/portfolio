@@ -28,6 +28,7 @@ import ibanban from './Ibanban.png'
 import br from './company/br.png'
 import pulse from './pulse.png'
 import code from './code.png'
+import course from './course.png'
 import headshot from './headshot.jpeg'
 import os from './os.png'
 import srl from './srl.png'
@@ -65,6 +66,7 @@ export {
   br,
   pulse,
   code,
+  course,
   headshot,
   os,
   srl,

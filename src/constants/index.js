@@ -11,6 +11,7 @@ import {
   gpt,
   br,
   code,
+  course,
   pulse,
   os,
   srl,
@@ -221,6 +222,24 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'Computers Course',
+    description:
+      'Online course page for hands-on software engineering content and learning resources.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'zustand',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: course,
+    source_code_link: 'https://course.nateazevedo.com/',
+    live_link: 'https://course.nateazevedo.com/',
+  },
     {
     name: 'Web Dev Interviews',
     description:
@@ -272,32 +291,6 @@ const projects = [
     image: chicken,
     source_code_link: 'https://github.com/nathanielazevedo/chickentinder',
     live_link: 'https://www.thechickentinder.com/',
-  },
-  {
-    name: 'Spoken Mandarin',
-    description:
-      'Master Mandarin by playing engaging mini-games that reinforce what you learn.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'TypeScript',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Express',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'MongoDB',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: spoken_madarin,
-    source_code_link: 'https://github.com/nathanielazevedo/language',
-    live_link: 'https://language-livid.vercel.app/',
   },
   {
     name: 'Pulse',
@@ -359,7 +352,7 @@ const projects = [
     ],
     image: just_calories,
     source_code_link: 'https://github.com/nathanielazevedo/just_calories',
-    live_link: '',
+    live_link: 'https://just-calories-nine.vercel.app/',
   }
 ]
 
